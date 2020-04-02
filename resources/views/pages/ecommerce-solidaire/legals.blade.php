@@ -1,9 +1,9 @@
 @extends('pages/ecommerce-solidaire/layout')
 
-@section('title', "Mentions légales")
+@section('title', "Mentions légales - e-Commerce Solidaire par la communauté Friends-of-Presta")
 
 @section('content')
-    <section class="container-lg mt-2">
+    <section class="container-lg mt-4">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('pages.ecommercesolidaire.index') }}">Accueil</a></li>

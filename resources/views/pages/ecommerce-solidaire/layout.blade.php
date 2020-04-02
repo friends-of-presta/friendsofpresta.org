@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title', 'Accueil') - {{ __('e-Commerce Solidaire par la communauté Friends-of-Presta') }}</title>
+    <title>@yield('title', 'e-Commerce Solidaire par la communauté Friends-of-Presta')</title>
 
     @stack('head')
 
