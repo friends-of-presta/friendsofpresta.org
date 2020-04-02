@@ -1,0 +1,168 @@
+@import "var";
+@import "~bootstrap/scss/bootstrap";
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@100,200,300,400,500,600,700,800,900&family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+@font-face {
+  font-family: "north_avellionregular";
+  src: url("../../../fonts/north_avellion-webfont.woff2") format("woff2"),
+  url("../../../fonts/north_avellion-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rankings_capsregular";
+  src: url("../../../fonts/rankings_caps-webfont.woff2") format("woff2"),
+  url("../../../fonts/rankings_caps-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ff-rankings-caps {
+  font-family: "rankings_capsregular";
+}
+.ff-north-avellion {
+  font-family: "north_avellionregular";
+}
+
+.text-size-2-5 {
+  font-size: 2.5rem;
+}
+.text-size-3 {
+  font-size: 3rem;
+}
+.small {
+  font-size: $small-font-size;
+}
+.list-hyphens li::before {
+  content: "- ";
+}
+
+h3 {
+  line-height: $h3-font-size * 1.5;
+}
+
+#form-container {
+  background-color: $gray-200;
+}
+
+header {
+  > div {
+    h2 {
+      font-family: "rankings_capsregular";
+      color: $body-bg;
+
+      font-size: 2.5rem;
+
+      span {
+        font-family: "north_avellionregular";
+        font-size: 3em;
+        line-height: 3.3rem;
+
+        display: inline-block;
+        @include media-breakpoint-down(xs) {
+          padding-bottom: 0px;
+        }
+      }
+      @include media-breakpoint-down(xs) {
+        padding-bottom: 0px;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+    }
+  }
+  img.img-fluid {
+    top: -23%;
+    @include media-breakpoint-up(lg) {
+      position: absolute !important;
+    }
+  }
+  img:not(.rounded-circle) {
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+    }
+    @include media-breakpoint-between(sm, md) {
+      width: 30% !important;
+    }
+  }
+}
+
+label {
+  font-style: italic;
+}
+
+.h-underline-secondary {
+  &::after {
+    content: " ";
+    display: block;
+    margin-top: 0.75rem;
+    width: 10rem;
+    border-bottom: $tertiary 3px solid;
+  }
+}
+.h-underline-secondary.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#teams > a::before,
+#teams > span::before {
+  content: "#";
+  font-weight: bold;
+}
+
+#app {
+  overflow-x: hidden;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} {
+          #{$prop}: $length !important;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (100%: 100, auto: auto) {
+      .mw#{$infix}-#{$abbrev} {
+        max-width: #{$prop} !important;
+      }
+      .mh#{$infix}-#{$abbrev} {
+        max-height: #{$prop} !important;
+      }
+    }
+  }
+}
+
+#sponsors img {
+  max-height: 50px !important;
+}
+
+.text-tertiary {
+  color: $tertiary;
+}
+//impression afffiche
+#affiche {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.35rem;
+  }
+}
+@media print {
+  .container {
+    width: auto;
+  }
+  .d-print-col-12 {
+    width: 100% !important;
+  }
+}

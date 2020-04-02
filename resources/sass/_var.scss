@@ -1,0 +1,98 @@
+$body-bg: white;
+$link-color: #007bff !default;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    "0-25": (
+      $spacer * 0.25
+    ),
+    "0-5": (
+      $spacer * 0.5
+    ),
+    "0-75": (
+      $spacer * 0.75
+    ),
+    1: $spacer,
+    "1-5": (
+      $spacer * 1.5
+    ),
+    2: (
+      $spacer * 2
+    ),
+    "2-5": (
+      $spacer * 2.5
+    ),
+    3: (
+      $spacer * 3
+    ),
+    4: (
+      $spacer * 4
+    ),
+    5: (
+      $spacer * 5
+    ),
+    6: (
+      $spacer * 6
+    ),
+    7: (
+      $spacer * 7
+    ),
+    8: (
+      $spacer * 8
+    ),
+    9: (
+      $spacer * 9
+    ),
+    10: (
+      $spacer * 10
+    ),
+    11: (
+      $spacer * 11
+    ),
+    12: (
+      $spacer * 12
+    ),
+    13: (
+      $spacer * 13
+    ),
+    14: (
+      $spacer * 14
+    ),
+    15: (
+      $spacer * 15
+    ),
+    20: (
+      $spacer * 20
+    ),
+    25: (
+      $spacer * 25
+    ),
+    30: (
+      $spacer * 30
+    )
+  ),
+  $spacers
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Grid containers
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

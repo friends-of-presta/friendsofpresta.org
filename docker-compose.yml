@@ -1,0 +1,27 @@
+version: "3"
+services:
+  web:
+    build: .docker/web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/var/www/html/
+  db:
+    container_name: fop_db
+    build: .docker/db
+    command: mysqld --sql-mode="" --innodb-strict-mode=OFF
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: fop
+      MYSQL_USER: fop_app
+      MYSQL_PASSWORD: password
+
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      environment:
+        PMA_HOST: db
+      ports:
+        - "8080:80"

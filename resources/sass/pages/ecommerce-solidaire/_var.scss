@@ -1,0 +1,123 @@
+$body-bg: white;
+$primary: black;
+$secondary: #60b4d8;
+$tertiary: #95dfff;
+$body-color: $primary;
+$input-border-color: $secondary;
+$input-focus-width: 0;
+$input-focus-box-shadow: none;
+$border-radius: 0;
+$btn-padding-x: 1.5rem !default;
+
+$breadcrumb-bg: $secondary;
+$breadcrumb-divider-color: white;
+$breadcrumb-active-color: white;
+
+$enable-responsive-font-sizes: true;
+
+$font-family-sans-serif: "Raleway", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$headings-font-family: "Farro", sans-serif;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    "0-25": (
+      $spacer * 0.25
+    ),
+    "0-5": (
+      $spacer * 0.5
+    ),
+    "0-75": (
+      $spacer * 0.75
+    ),
+    1: $spacer,
+    "1-5": (
+      $spacer * 1.5
+    ),
+    2: (
+      $spacer * 2
+    ),
+    "2-5": (
+      $spacer * 2.5
+    ),
+    3: (
+      $spacer * 3
+    ),
+    4: (
+      $spacer * 4
+    ),
+    5: (
+      $spacer * 5
+    ),
+    6: (
+      $spacer * 6
+    ),
+    7: (
+      $spacer * 7
+    ),
+    8: (
+      $spacer * 8
+    ),
+    9: (
+      $spacer * 9
+    ),
+    10: (
+      $spacer * 10
+    ),
+    11: (
+      $spacer * 11
+    ),
+    12: (
+      $spacer * 12
+    ),
+    13: (
+      $spacer * 13
+    ),
+    14: (
+      $spacer * 14
+    ),
+    15: (
+      $spacer * 15
+    ),
+    20: (
+      $spacer * 20
+    ),
+    25: (
+      $spacer * 25
+    ),
+    30: (
+      $spacer * 30
+    )
+  ),
+  $spacers
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Grid containers
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+$font-size-base: 1rem;
+$small-font-size: $font-size-base * 0.8;
