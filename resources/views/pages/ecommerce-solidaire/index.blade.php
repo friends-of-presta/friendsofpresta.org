@@ -260,7 +260,7 @@
             <div class="ml-sm-5">
                 <p>Nous souhaitons aider en priorité les TPE françaises touchées par le confinement :</p>
                 <ul class="list-unstyled list-hyphens">
-                    <li>Société avec SIREN de 0 à 10 salariés</li>
+                    <li>Société avec SIREN de 0 à 20 salariés</li>
                     <li>Siège social en France</li>
                     <li>Impactée par le confinement</li>
                     <li>Un catalogue produit compatible avec la vente en ligne ou en retrait</li>
