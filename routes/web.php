@@ -20,6 +20,7 @@ Route::group(["prefix"=>"/ecommerce-solidaire"], function() {
     Route::get('', 'Pages\EcommercesolidaireController@index')->name('pages.ecommercesolidaire.index');
     Route::get('/mentions-legales.html', 'Pages\EcommercesolidaireController@legals')->name('pages.ecommercesolidaire.legals');
     Route::get('/affiche.html', 'Pages\EcommercesolidaireController@print')->name('pages.ecommercesolidaire.print');
+    Route::get('/annuaire.html', 'Pages\EcommercesolidaireController@inscriptions')->name('pages.ecommercesolidaire.inscriptions');
     Route::post('/inscription.html', 'Pages\EcommercesolidaireController@inscription')->name('pages.ecommercesolidaire.mail');
 });
 

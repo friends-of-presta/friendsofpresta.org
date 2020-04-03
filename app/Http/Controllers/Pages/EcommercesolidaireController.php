@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\InscriptionRequest;
 use App\Repositories\InscriptionRepository;
 use App\Models\Sponsor;
+use App\Models\Inscription;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -39,6 +40,11 @@ class EcommercesolidaireController extends Controller
     public function print(Request $request)
     {
         return view('pages/ecommerce-solidaire/print', ['url' => $request->input('url')]);
+    }
+
+    public function inscriptions()
+    {
+        return view('pages/ecommerce-solidaire/inscriptions', ['inscriptionlist' => Inscription::where('status', 'en ligne')->get()]);
     }
 
     public function inscription(InscriptionRequest $request)
