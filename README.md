@@ -1,4 +1,4 @@
-# ecommerce-solidaire-minisite
+# friendsofpresta
 Mini site ecommerce solidaire
 
 ## Start project on local

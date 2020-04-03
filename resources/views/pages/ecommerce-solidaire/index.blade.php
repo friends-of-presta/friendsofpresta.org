@@ -335,13 +335,13 @@
                     <a href="{{ $volonteer->url }}" class="col-md-6">
                         <span>{{ $volonteer->name }}</span>
                         <span class="text-secondary">{{ $volonteer->company }}</span>
-                        <span>{{ $volonteer->city }}</span>
+                        <span>{{ $volonteer->city }} ({{ $volonteer->department }})</span>
                     </a>
                     @else
                     <span class="col-md-6">
                         <span>{{ $volonteer->name }}</span>
                         <span class="text-secondary">{{ $volonteer->company }}</span>
-                        <span>{{ $volonteer->city }}</span>
+                        <span>{{ $volonteer->city }} ({{ $volonteer->department }})</span>
                     </span>
                     @endif
                     @endforeach
