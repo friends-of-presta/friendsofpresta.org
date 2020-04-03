@@ -17,8 +17,7 @@
     <section class="container">
         <div class="mx-auto pt-5 col-8 d-flex flex-column justify-content-lg-around">
             <h1 class="pl-4">Commandez<br> nos produits en ligne</h1>
-            <h2 class="pl-4 text-secondary">
-                {{ htmlentities(trim(str_replace('https://','', $url),'/')) }}</h2>
+            <h2 class="pl-4 text-secondary">{{ htmlentities(trim(str_replace('https://','', $url),'/')) }}</h2>
             <div class="text-center"><img
                         src="https://chart.googleapis.com/chart?chs=547x547&cht=qr&chl={{ urlencode($url) }}&choe=UTF-8" />
             </div>
@@ -30,5 +29,6 @@
                 <img src="{{ asset('assets/images/pages/ecommerce-solidaire/friendsofv2.2.svg') }}" class="col-6">
             </div>
         </div>
+    </section>
 </div>
 </body>
