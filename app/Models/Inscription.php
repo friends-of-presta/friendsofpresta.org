@@ -27,4 +27,12 @@ class Inscription extends Model
      * @var int
      */
     protected $perPage = 30;
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return $this->belongsTo('\App\User', 'attribution');
+    }
 }

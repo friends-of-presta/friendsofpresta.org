@@ -11,8 +11,8 @@
             </ol>
         </nav>
 
-        <h3 class="text-secondary h-underline-secondary mt-2 mb-2">Mentions <span class="text-dark">légales</span></h3>
-        <p>   Ce site internet est la propriété de communauté Friends-of-Presta</p>
+        <h3 class="text-secondary h-underline-secondary mb-2">Mentions <span class="text-dark">légales</span></h3>
+        <p>Ce site internet est la propriété de communauté Friends-of-Presta</p>
         <p>
             Responsable de publication : Jean-François Viguier<br />
             Raison sociale : Association Friends-of-Presta en cours de création<br />

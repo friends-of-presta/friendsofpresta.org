@@ -224,9 +224,9 @@
                 <a class="d-block align-self-end" href="https://jeff-de-bruges.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-jdb.jpg') }}" alt="Boutique Jeff de Bruges à Thionville" /></a>
             </div>
         </div>
-        <!--<div class="text-center">
-            <a href="{{ route('pages.ecommercesolidaire.inscriptions') }}" class="btn btn-light mt-2">Voir toutes les boutiques</a>
-        </div>-->
+        <div class="text-center">
+            <a href="{{ route('pages.ecommercesolidaire.inscriptions') }}" class="btn btn-light mt-2">Voir toutes les boutiques en ligne</a>
+        </div>
     </section>
 
     <section class="container-lg mt-5">

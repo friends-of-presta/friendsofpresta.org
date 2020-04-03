@@ -34,11 +34,11 @@
         <div class="container-lg position-relative">
             <div class="row">
                 <div class="col-lg-5 d-none d-lg-block">
-                    <img class="img-fluid"  src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" />
+                    <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="img-fluid"  src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
                 </div>
                 <div class="col-lg-7 position-relative">
                     <div class="p-2 mt-md-2 mb-md-5">
-                        <img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" />
+                        <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
                         <div class="col-sm-8 float-md-left float-lg-none">
                             <h1 class="h1 text-secondary font-weight-bold ml-n2">EcommerceSolidaire</h1>
                             <h2 class="d-flex text-primary ml-lg-1 ml-n2 ml-sm-1">

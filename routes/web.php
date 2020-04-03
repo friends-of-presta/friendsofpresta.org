@@ -26,4 +26,7 @@ Route::group(["prefix"=>"/ecommerce-solidaire"], function() {
 
 Auth::routes();
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::group(["prefix"=>"/admin"], function() {
+    Route::get('', 'AdminController@index')->name('admin');
+    Route::get('/inscriptions', 'AdminController@inscriptions')->name('admin.inscriptions');
+});

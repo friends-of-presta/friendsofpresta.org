@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Inscription;
 
 class AdminController extends Controller
 {
@@ -14,6 +14,14 @@ class AdminController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function inscriptions()
+    {
+        return view('admin.inscriptions', ['inscriptionlist' => Inscription::orderBy('id', 'desc')->paginate()]);
     }
 
     /**

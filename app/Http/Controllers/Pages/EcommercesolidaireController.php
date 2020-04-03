@@ -44,7 +44,7 @@ class EcommercesolidaireController extends Controller
 
     public function inscriptions()
     {
-        return view('pages/ecommerce-solidaire/inscriptions', ['inscriptionlist' => Inscription::where('status', 'en ligne')->get()]);
+        return view('pages/ecommerce-solidaire/inscriptions', ['inscriptionlist' => Inscription::where('status', 'en ligne')->orderBy('cp')->get()]);
     }
 
     public function inscription(InscriptionRequest $request)
