@@ -16,10 +16,12 @@ use Illuminate\Support\Facades\Auth;
 
 Route::view('/', 'index');
 
-Route::get('/ecommerce-solidaire', 'Pages\EcommercesolidaireController@index')->name('pages.ecommercesolidaire.index');
-Route::get('/ecommerce-solidaire/mentions-legales.html', 'Pages\EcommercesolidaireController@legals')->name('pages.ecommercesolidaire.legals');
-
-Route::post('/inscription.html', 'Pages\EcommercesolidaireController@inscription')->name('pages.ecommercesolidaire.mail');
+Route::group(["prefix"=>"/ecommerce-solidaire"], function() {
+    Route::get('', 'Pages\EcommercesolidaireController@index')->name('pages.ecommercesolidaire.index');
+    Route::get('/mentions-legales.html', 'Pages\EcommercesolidaireController@legals')->name('pages.ecommercesolidaire.legals');
+    Route::get('/affiche.html', 'Pages\EcommercesolidaireController@print')->name('pages.ecommercesolidaire.print');
+    Route::post('/inscription.html', 'Pages\EcommercesolidaireController@inscription')->name('pages.ecommercesolidaire.mail');
+});
 
 Auth::routes();
 

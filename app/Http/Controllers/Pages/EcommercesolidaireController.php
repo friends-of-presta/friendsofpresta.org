@@ -7,6 +7,7 @@ use App\Http\Requests\InscriptionRequest;
 use App\Repositories\InscriptionRepository;
 use App\Models\Sponsor;
 use App\User;
+use Illuminate\Http\Request;
 
 class EcommercesolidaireController extends Controller
 {
@@ -33,6 +34,11 @@ class EcommercesolidaireController extends Controller
     public function legals()
     {
         return view('pages/ecommerce-solidaire/legals');
+    }
+
+    public function print(Request $request)
+    {
+        return view('pages/ecommerce-solidaire/print', ['url' => $request->input('url')]);
     }
 
     public function inscription(InscriptionRequest $request)
