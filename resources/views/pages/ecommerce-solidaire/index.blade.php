@@ -148,6 +148,7 @@
             </div>
             <div class="col-lg-6 offset-md-1 mb-2 d-lg-flex">
                 <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.jpg') }}" alt=""/></a>
+                {{-- 
                 <h3>Un exemple ? Les Tarées du Vrac à Toulouse</h3>
                 <p>
 Marlène et Mélanie ont ouvert leur commerce en plein confinement mi-mars et vendent des produits alimentaires et accessoires en mode zéro déchet. Elles proposent le retrait sans contact ou la livraison à vélo.<br/>
@@ -156,6 +157,7 @@ Comble de malchance, elles n’ont pas reçu leur caisse du magasin et ne peuven
                 </p>
                 <p>Mélanie explique : <em>“En plus d'avoir découvert notre nouveau métier dans des circonstances un peu particulières nous avons pu apprécier la solidarité des autres commerçants de la rue et des autres professionnels comme Jean-François Viguier qui nous a proposé de réaliser ce site de e-commerce, pièce maîtresse de notre futur succès !”</em>
                 </p>
+                --}}
             </div>
         </div>
     </section>
