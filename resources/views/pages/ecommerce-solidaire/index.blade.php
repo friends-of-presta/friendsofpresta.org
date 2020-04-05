@@ -143,11 +143,19 @@
                 </p>
 
                 <div class="text-center mt-3">
-                    <a href="https://tartines-et-gourmandises.ecommerce-solidaire.fr/" target="_blank" class="btn btn-secondary text-white">Voir le site exemple</a>
+                    <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank" class="btn btn-secondary text-white">Voir le site exemple</a>
                 </div>
             </div>
-            <div class="col-lg-6 offset-md-1 mb-2 d-none d-lg-flex">
-                <a href="https://tartines-et-gourmandises.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-boulangerie.jpg') }}" alt=""/></a>
+            <div class="col-lg-6 offset-md-1 mb-2 d-lg-flex">
+                <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.png') }}" alt=""/></a>
+                <h3>Un exemple ? Les Tarées du Vrac à Toulouse</h3>
+                <p>
+Marlène et Mélanie ont ouvert leur commerce en plein confinement mi-mars et vendent des produits alimentaires et accessoires en mode zéro déchet. Elles proposent le retrait sans contact ou la livraison à vélo.<br/>
+Comble de malchance, elles n’ont pas reçu leur caisse du magasin et ne peuvent pas accepter les cartes bancaires : le site vient à la rescousse avec le paiement en ligne.
+
+                </p>
+                <p>Mélanie explique : <em>“En plus d'avoir découvert notre nouveau métier dans des circonstances un peu particulières nous avons pu apprécier la solidarité des autres commerçants de la rue et des autres professionnels comme Jean-François Viguier qui nous a proposé de réaliser ce site de e-commerce, pièce maîtresse de notre futur succès !”</em>
+                </p>
             </div>
         </div>
     </section>
@@ -503,17 +511,8 @@
                     utile et <strong>limiter l'impact économique</strong> au plus près de chacun d'entre nous.
                     L’objectif est bien de préparer le redémarrage qui aura lieu dans les prochaines semaines.
                 </p>
-                <a href="https://www.facebook.com/ecommercesolidaire" class="d-block text-center mt-2">
-                    <svg viewBox="0 0 36 36" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4" fill="url(#jsc_s_2)" height="40" width="40">
-                        <defs>
-                            <linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_s_2">
-                                <stop offset="0%" stop-color="#0062E0"></stop>
-                                <stop offset="100%" stop-color="#19AFFF"></stop>
-                            </linearGradient>
-                        </defs>
-                        <path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path>
-                        <path d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z" fill="white"></path>
-                    </svg>
+                <a href="https://www.facebook.com/ecommercesolidaire" target="_blank" class="d-block text-center mt-2">
+                <img class="" src="{{ asset('assets/images/pages/ecommerce-solidaire/icons/fbpage.jpg') }}" alt="Rejoignez-nous sur facebook"/>
                 </a>
             </div>
             <div class="col-md-6 col-12">
