@@ -29,16 +29,24 @@
     Merci de <a href="https://browsehappy.com/">mettre à jour</a> votre navigateur.
 </p>
 <![endif]-->
-<div id="app">
+<div id="app" class=" position-relative">
     <header class="w-100 d-flex align-items-start">
         <div class="container-lg position-relative">
             <div class="row">
                 <div class="col-lg-5 d-none d-lg-block">
-                    <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="img-fluid"  src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
+                    @if(Route::currentRouteName() == 'pages.ecommercesolidaire.index')
+                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" />
+                    @else
+                        <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
+                    @endif
                 </div>
                 <div class="col-lg-7 position-relative">
                     <div class="p-2 mt-md-2 mb-md-5">
-                        <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
+                        @if(Route::currentRouteName() == 'pages.ecommercesolidaire.index')
+                            <img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" />
+                        @else
+                            <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
+                        @endif
                         <div class="col-sm-8 float-md-left float-lg-none">
                             <h1 class="h1 text-secondary font-weight-bold ml-n2">EcommerceSolidaire</h1>
                             <h2 class="d-flex text-primary ml-lg-1 ml-n2 ml-sm-1">
@@ -54,6 +62,23 @@
             </div>
         </div>
     </header>
+
+    <!--<div class="navbar navbar-light fixed-top bg-transparent justify-content-end">
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>-->
+
+    <!-- Sidebar -->
+    <!--<nav class="collapse fixed-top" id="sidebar">
+        <div class="navbar navbar-dark bg-secondary align-items-start h-100">
+            <ul class="navbar-nav flex-column pt-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>-->
 
     <main>
         @yield('content')

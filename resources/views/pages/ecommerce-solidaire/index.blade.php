@@ -9,11 +9,11 @@
 
 @section('content')
     <section class="container-lg mt-4">
-        <div class="row">
-            <div class="col-lg-6 d-md-block mt-n2 order-lg-2 mb-2">
+        <div class="row flex-row-reverse">
+            <div class="col-lg-6 d-lg-block d-none">
                 <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/bg-portable.svg') }}" alt=""/>
             </div>
-            <div class="col-lg-5 offset-1 order-md-1">
+            <div class="col-lg-6">
                 <div class="">
                     <h3 class="text-secondary h-underline-secondary">
                         Les objectifs de <span class="text-dark">l'initiative</span>
@@ -51,10 +51,10 @@
 
     <section class="container-lg mt-5">
         <div class="row align-items-center">
-            <div class="col-lg-6 d-md-block mb-2">
+            <div class="col-lg-6 d-md-block text-center mb-2">
                 <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/bg-groupe.svg') }}" alt=""/>
             </div>
-            <div class="col-lg-5 offset-1">
+            <div class="col-lg-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">
                     E-commerce Solidaire : Comment ouvrir ma boutique en ligne ?
                 </h3>
@@ -111,7 +111,7 @@
 
     <section class="container-lg mt-5">
         <div class="row">
-            <div class="col-md-6 offset-sm-1 offset-lg-0">
+            <div class="col-md-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">
                     Une boutique en ligne simple et efficace pour soutenir les <span class="text-dark">commerces de
                         proximité</span>
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="row flex-md-row flex-column-reverse">
-            <div class="col-lg-5 mt-2 mt-md-0 offset-sm-1 offset-lg-0">
+            <div class="col-lg-6 mb-2">
                 <p>
                     Nous proposons un site aux <strong>fonctionnalités essentielles que vous pourrez conserver
                         dans la durée :</strong>
@@ -141,30 +141,40 @@
                     votre boutique avec la solution PrestaShop est très rapide et vous permet de vendre vos articles
                     en toute fiabilité.
                 </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/403631892?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-lg mt-5">
+        <div class="row flex-md-row flex-column-reverse align-items-center">
+            <div class="col-md-6 mt-md-0 mt-2">
+                <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.jpg') }}" alt=""/></a>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-secondary h-underline-secondary mb-2">Un exemple ? <span class="text-dark">Les Tarées du Vrac à Toulouse</span></h3>
+                <p>
+                    Marlène et Mélanie ont ouvert leur commerce en plein confinement mi-mars et vendent des produits alimentaires et accessoires en mode zéro déchet. Elles proposent le retrait sans contact ou la livraison à vélo.<br/>
+                    Comble de malchance, elles n’ont pas reçu leur caisse du magasin et ne peuvent pas accepter les cartes bancaires : le site vient à la rescousse avec le paiement en ligne.
+
+                </p>
+                <p><strong>Mélanie explique :</strong> <q class="font-italic">En plus d'avoir découvert notre nouveau métier dans des circonstances un peu particulières nous avons pu apprécier la solidarité des autres commerçants de la rue et des autres professionnels comme Jean-François Viguier qui nous a proposé de réaliser ce site de e-commerce, pièce maîtresse de notre futur succès !</q>
+                </p>
 
                 <div class="text-center mt-3">
                     <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank" class="btn btn-secondary text-white">Voir le site exemple</a>
                 </div>
-            </div>
-            <div class="col-lg-6 offset-md-1 mb-2 d-lg-flex">
-                <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.jpg') }}" alt=""/></a>
-                {{-- 
-                <h3>Un exemple ? Les Tarées du Vrac à Toulouse</h3>
-                <p>
-Marlène et Mélanie ont ouvert leur commerce en plein confinement mi-mars et vendent des produits alimentaires et accessoires en mode zéro déchet. Elles proposent le retrait sans contact ou la livraison à vélo.<br/>
-Comble de malchance, elles n’ont pas reçu leur caisse du magasin et ne peuvent pas accepter les cartes bancaires : le site vient à la rescousse avec le paiement en ligne.
-
-                </p>
-                <p>Mélanie explique : <em>“En plus d'avoir découvert notre nouveau métier dans des circonstances un peu particulières nous avons pu apprécier la solidarité des autres commerçants de la rue et des autres professionnels comme Jean-François Viguier qui nous a proposé de réaliser ce site de e-commerce, pièce maîtresse de notre futur succès !”</em>
-                </p>
-                --}}
             </div>
         </div>
     </section>
 
     <section class="container-lg mt-5">
         <div class="row align-items-center">
-            <div class="col-lg-5 offset-sm-1 offset-lg-0">
+            <div class="col-lg-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">
                     Comment lancer mon e-commerce <span class="text-dark">facilement ?</span>*
                 </h3>
@@ -193,7 +203,7 @@ Comble de malchance, elles n’ont pas reçu leur caisse du magasin et ne peuven
                     Aucune autre prestation ni assistance ne sera fournie par l’expert mais vous pourrez le solliciter pour un devis, sans aucune obligation ni exclusivité.</p>
 
             </div>
-            <div class="col-lg-6 offset-md-1 d-none d-lg-flex">
+            <div class="col-lg-6 d-none d-lg-flex">
                 <a href="https://little-big-truck.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-food.jpg') }}" alt=""/></a>
             </div>
         </div>
@@ -206,32 +216,44 @@ Comble de malchance, elles n’ont pas reçu leur caisse du magasin et ne peuven
             <a href="#form-container" class="btn btn-secondary text-white mt-2">Je m'inscris gratuitement</a>
         </div>
 
-        <div class="d-flex flex-md-row flex-column">
-            <div class="col d-flex flex-column mt-2">
-                <h4 class="h5">La boulangerie Vrignaud près de Toulouse</h4>
-                <p class="font-italic">La boulangerie - pâtisserie a déjà mis une
-                    soixantaine de produits en ligne et s'est vite réorganisée :
-                    madame en boutique et monsieur en livraison.
-                    Merci à notre expert Xavier BERNARD
-                    qui les a accompagnés.</p>
-                <a class="d-block align-self-end" href="https://tartines-et-gourmandises.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-boulangerie.jpg') }}" alt="Boulangerie Vrignaud" /></a>
+        <div class="row">
+            <div class="col-md-4 col-12 mt-2">
+                <div class="d-flex flex-column">
+                    <h4 class="h5">La boulangerie Vrignaud près de Toulouse</h4>
+                    <p class="font-italic">La boulangerie - pâtisserie a déjà mis une
+                        soixantaine de produits en ligne et s'est vite réorganisée :
+                        madame en boutique et monsieur en livraison.
+                        Merci à notre expert Xavier BERNARD
+                        qui les a accompagnés.</p>
+                    <a href="https://tartines-et-gourmandises.ecommerce-solidaire.fr/" target="_blank">
+                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-boulangerie.jpg') }}" alt="Boulangerie Vrignaud" />
+                    </a>
+                </div>
             </div>
-            <div class="col d-flex flex-column mt-2">
-                <h4 class="h5">L'épicerie japonaise Autour du yuzu à Mâcon</h4>
-                <p class="font-italic">L'épicerie fine japonaise Autour du Yuzu de Mâcon
-                    propose 200 références en ligne.
-                    Merci à Christophe VIDAL, expert basé à Lyon qui a
-                    pu livrer le site dans des délais records.</p>
-                <a class="d-block align-self-end" href="https://blz68.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-blz68.jpg') }}" alt="Boutique Autour du yuzu" /></a>
+            <div class="col-md-4 col-12 mt-2">
+                <div class="d-flex flex-column">
+                    <h4 class="h5">L'épicerie japonaise Autour du yuzu à Mâcon</h4>
+                    <p class="font-italic">L'épicerie fine japonaise Autour du Yuzu de Mâcon
+                        propose 200 références en ligne.
+                        Merci à Christophe VIDAL, expert basé à Lyon qui a
+                        pu livrer le site dans des délais records.</p>
+                    <a href="https://blz68.ecommerce-solidaire.fr/" target="_blank">
+                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-blz68.jpg') }}" alt="Boutique Autour du yuzu" />
+                    </a>
+                </div>
             </div>
-            <div class="col d-flex flex-column mt-2">
-                <h4 class="h5">Le chocolatier Jeff de Bruges à Thionville</h4>
-                <p class="font-italic">Le magasin Jeff de Bruges à Thionville
-                    peut poursuivre ses ventes de lapins,
-                    cloches et œufs de Pâques.
-                    Merci à Julien Mutzenhardt qui a mis en place
-                    leur boutique en ligne.</p>
-                <a class="d-block align-self-end" href="https://jeff-de-bruges.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-jdb.jpg') }}" alt="Boutique Jeff de Bruges à Thionville" /></a>
+            <div class="col-md-4 col-12 mt-2">
+                <div class="d-flex flex-column">
+                    <h4 class="h5">Le chocolatier Jeff de Bruges à Thionville</h4>
+                    <p class="font-italic">Le magasin Jeff de Bruges à Thionville
+                        peut poursuivre ses ventes de lapins,
+                        cloches et œufs de Pâques.
+                        Merci à Julien Mutzenhardt qui a mis en place
+                        leur boutique en ligne.</p>
+                    <a href="https://jeff-de-bruges.ecommerce-solidaire.fr/" target="_blank">
+                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-jdb.jpg') }}" alt="Boutique Jeff de Bruges à Thionville" />
+                    </a>
+                </div>
             </div>
         </div>
         <div class="text-center">
