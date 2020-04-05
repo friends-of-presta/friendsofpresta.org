@@ -147,7 +147,7 @@
                 </div>
             </div>
             <div class="col-lg-6 offset-md-1 mb-2 d-lg-flex">
-                <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.png') }}" alt=""/></a>
+                <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.jpg') }}" alt=""/></a>
                 <h3>Un exemple ? Les Tarées du Vrac à Toulouse</h3>
                 <p>
 Marlène et Mélanie ont ouvert leur commerce en plein confinement mi-mars et vendent des produits alimentaires et accessoires en mode zéro déchet. Elles proposent le retrait sans contact ou la livraison à vélo.<br/>
