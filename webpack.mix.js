@@ -31,6 +31,7 @@ if (mix.inProduction()) {
         ],
         whitelistPatterns: [
             /dropdown/,
+            /tooltip/,
             /active$/,
             /pagination$/,
             /page-/,
