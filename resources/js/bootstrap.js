@@ -11,6 +11,7 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap/js/dist/dropdown.js');
+    require('bootstrap/js/dist/tooltip.js');
 } catch (e) {}
 
 
@@ -35,4 +36,6 @@ try {
 
 
     }, false);
+
+    $('[data-toggle="tooltip"]').tooltip()
 })();

@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="card-header">Inscriptions #ecommercesolidaire</div>
                     <div class="card-body">
-                        <div class="display-3 text-center">{{ $inscriptiontotal }}</div>
+                        <div class="display-2 text-center">{{ $inscriptiontotal }}</div>
                     </div>
                     <div class="card-footer"><a href="{{ route('admin.inscriptions') }}" class="card-link">Listing des inscriptions</a></div>
                 </div>

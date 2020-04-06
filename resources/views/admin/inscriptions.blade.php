@@ -22,6 +22,7 @@
                 <th scope="col">Agence</th>
                 <th scope="col">Ville</th>
                 <th scope="col">Etat</th>
+                <th scope="col">Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -39,6 +40,11 @@
                     <td>{{ $inscription->user ? $inscription->user->company : '' }}</td>
                     <td class="text-nowrap">{{ $inscription->user ? $inscription->user->city . ' (' . $inscription->user->department . ')' : '' }}</td>
                     <td>{{ $inscription->status }}</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button disabled data-toggle="tooltip" data-placement="top" title="Soon" type="button" class="btn btn-secondary btn-sm"><i class="far fa-eye"></i></button>
+                        </div>
+                    </td>
                 </tr>
             @endforeach
             </tbody>
