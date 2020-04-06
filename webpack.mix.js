@@ -15,6 +15,7 @@ require('laravel-mix-purgecss');
 mix.config.fileLoaderDirs.fonts = 'assets/webfonts';
 mix.config.fileLoaderDirs.images = 'assets/images';
 
+mix.js('resources/js/app.js', 'public/assets/js');
 mix.js('resources/js/pages/ecommerce-solidaire/app.js', 'public/assets/js/pages/ecommerce-solidaire');
 mix.sass('resources/sass/app.scss', 'public/assets/css');
 mix.sass('resources/sass/pages/ecommerce-solidaire/app.scss', 'public/assets/css/pages/ecommerce-solidaire');
@@ -29,8 +30,11 @@ if (mix.inProduction()) {
             'resources/**/*.vue'
         ],
         whitelistPatterns: [
+            /dropdown/,
             /active$/,
-            /btn-$/
+            /pagination$/,
+            /page-/,
+            /btn-/
         ],
         enabled: true
     });

@@ -10,7 +10,7 @@ try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
+    require('bootstrap/js/dist/dropdown.js');
 } catch (e) {}
 
 
@@ -36,27 +36,3 @@ try {
 
     }, false);
 })();
-
-$(document).ready(function () {
-    $("#form-container").on('submit', '#contact-form.is-validate', function (e) {
-        e.preventDefault(); // avoid to execute the actual submit of the form.
-
-        var form = $(this);
-        var url = form.attr('action');
-        var button = $('#submit');
-
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: form.serialize(), // serializes the form's elements.
-            error: function (msg) {
-                button.prop('disabled', true);
-                button.text('Une erreur est survenue').addClass('btn-danger');
-            },
-            success: function (msg) {
-                button.prop('disabled', true);
-                button.text('Le formulaire a été envoyé').addClass('btn-success');
-            }
-        });
-    });
-});
