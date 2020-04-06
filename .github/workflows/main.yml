@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     # Using container
     container:
-      image: friends-of-presta/friendsofpresta.org/fop-docker-php:1.0
+      image: docker.pkg.github.com/friends-of-presta/friendsofpresta.org/fop-docker-php:1.0
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
