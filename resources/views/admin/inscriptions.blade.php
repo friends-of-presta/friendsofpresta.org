@@ -11,6 +11,44 @@
 
         <h1 class="mb-2">Inscriptions</h1>
 
+        <div class="sticky-top bg-light pt-1 px-1 rounded-bottom shadow-sm">
+            <form method="get" action="{{ route('admin.inscriptions') }}">
+                <div class="form-row">
+                    <div class="col-md-1">
+                        <input type="text" name="id" class="form-control @error('id') is-invalid @enderror" value="{{ $request->get('id') }}" placeholder="Id" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" name="societe" class="form-control @error('societe') is-invalid @enderror" value="{{ $request->get('societe') }}" placeholder="Société" />
+                    </div>
+                    <div class="col-md-3">
+                        <select name="status" class="custom-select form-control @error('status') is-invalid @enderror">
+                            <option value="">-- Choisir un status</option>
+                            @foreach($status as $statut)
+                            <option class="text-capitalize" value="{{ $statut }}" @if($statut == $request->get('status')) selected @endif>{{ $statut }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select name="attribution" class="custom-select form-control @error('attribution') is-invalid @enderror">
+                            <option value="">-- Choisir un expert</option>
+                            @foreach($userlist as $user)
+                                <option value="{{ $user->id }}" @if($user->id == $request->get('attribution')) selected @endif>{{ $user->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" name="cp" class="form-control @error('cp') is-invalid @enderror" value="{{ $request->get('cp') }}" placeholder="Code postal (ex : 95, 950001)" />
+                    </div>
+                    <div class="col-md-1">
+                        <button type="submit" class="w-100 btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div class="d-flex flex-row justify-content-center mt-1">
+                <div class="mx-auto">{{ $inscriptionlist->appends($request->validated())->links() }}</div>
+            </div>
+        </div>
+
         <table class="table table-striped">
             <thead>
             <tr>
@@ -49,11 +87,5 @@
             @endforeach
             </tbody>
         </table>
-
-        <div class="fixed-bottom bg-light pt-1">
-            <div class="d-flex flex-row justify-content-center">
-                <div class="mx-auto">{{ $inscriptionlist->links() }}</div>
-            </div>
-        </div>
     </div>
 @endsection

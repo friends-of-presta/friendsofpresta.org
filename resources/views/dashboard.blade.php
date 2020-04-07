@@ -15,7 +15,13 @@
                 <div class="card">
                     <div class="card-header">Inscriptions #ecommercesolidaire</div>
                     <div class="card-body">
-                        <div class="display-2 text-center">{{ $inscriptiontotal }}</div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="display-2 text-center mr-2">{{ array_sum($inscription) }}</div>
+                            <div>
+                                <div>En attente : <strong><a href="{{ route('admin.inscriptions') . '?status=A+attribuer' }}">{{ $inscription['A attribuer'] }}</a></strong></div>
+                                <div>En cours : <strong>{{ $inscription['création en cours'] }}</strong></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer"><a href="{{ route('admin.inscriptions') }}" class="card-link">Listing des inscriptions</a></div>
                 </div>

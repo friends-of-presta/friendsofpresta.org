@@ -7,6 +7,13 @@ use Illuminate\Support\Facades\Mail;
 
 class InscriptionRepository
 {
+    public $status = [
+        'A attribuer',
+        'création en cours',
+        'en ligne',
+        'abandonné'
+    ];
+
     /**
      * Save an inscription
      *
