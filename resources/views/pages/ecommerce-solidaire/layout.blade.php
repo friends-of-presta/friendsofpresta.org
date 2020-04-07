@@ -32,28 +32,23 @@
 <div id="app" class=" position-relative">
     <header class="w-100 d-flex align-items-start">
         <div class="container-lg position-relative">
-            <div class="row">
-                <div class="col-lg-5 d-none d-lg-block">
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-md-4 col-sm-6 col-12 mt-lg-n4">
                     @if(Route::currentRouteName() == 'pages.ecommercesolidaire.index')
                         <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" />
                     @else
                         <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
                     @endif
                 </div>
-                <div class="col-lg-7 position-relative">
-                    <div class="p-2 mt-md-2 mb-md-5">
-                        @if(Route::currentRouteName() == 'pages.ecommercesolidaire.index')
-                            <img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" />
-                        @else
-                            <a href="{{ route('pages.ecommercesolidaire.index') }}"><img class="d-lg-none float-md-left" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" alt="Logo" /></a>
-                        @endif
-                        <div class="col-sm-8 float-md-left float-lg-none">
-                            <h1 class="h1 text-secondary font-weight-bold ml-n2">EcommerceSolidaire</h1>
-                            <h2 class="d-flex text-primary ml-lg-1 ml-n2 ml-sm-1">
-                                Friends <span>of</span> Presta
-                                <img class="ml-0-5" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/preston.svg') }}" class="rounded-circle" height="40" width="40" alt="Preston" />
-                            </h2>
-                        </div>
+                <div class="col-lg-7 col-md-8 col-12 position-relative">
+                    <div class="px-2 py-lg-2 mt-md-2">
+                        <h1 class="h1 text-secondary font-weight-bold ml-n2">EcommerceSolidaire</h1>
+                        <h2 class="d-flex flex-wrap text-primary ml-lg-1 ml-n2 ml-sm-1 my-1 align-items-center">
+                            <span class="ff-rankings-caps text-size-2-5">Friends</span>
+                            <span class="ff-north-avellion text-size-8 text-lineh-3">of</span>
+                            <span class="ff-rankings-caps text-size-2-5">Presta</span>
+                            <img class="ml-0-5 mb-0-5" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/preston.svg') }}" class="rounded-circle" height="40" width="40" alt="Preston" />
+                        </h2>
                         <p class="mb-auto font-italic">
                             La communauté Friends-of-Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement.
                         </p>

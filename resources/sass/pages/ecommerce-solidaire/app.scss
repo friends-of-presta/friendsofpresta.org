@@ -28,8 +28,11 @@
 .text-size-2-5 {
   font-size: 2.5rem;
 }
-.text-size-3 {
-  font-size: 3rem;
+.text-size-8 {
+  font-size: 8rem;
+}
+.text-lineh-3 {
+  line-height: 3rem;
 }
 .small {
   font-size: $small-font-size;
@@ -44,47 +47,6 @@ h3 {
 
 #form-container {
   background-color: $gray-200;
-}
-
-header {
-  > div {
-    h2 {
-      font-family: "rankings_capsregular";
-      color: $body-bg;
-
-      font-size: 2.5rem;
-
-      span {
-        font-family: "north_avellionregular";
-        font-size: 3em;
-        line-height: 3.3rem;
-
-        display: inline-block;
-        @include media-breakpoint-down(xs) {
-          padding-bottom: 0px;
-        }
-      }
-      @include media-breakpoint-down(xs) {
-        padding-bottom: 0px;
-        font-size: 1.8rem;
-        line-height: 2.3rem;
-      }
-    }
-  }
-  img.img-fluid {
-    top: -23%;
-    @include media-breakpoint-up(lg) {
-      position: absolute !important;
-    }
-  }
-  img:not(.rounded-circle) {
-    @include media-breakpoint-down(sm) {
-      width: 100% !important;
-    }
-    @include media-breakpoint-between(sm, md) {
-      width: 30% !important;
-    }
-  }
 }
 
 label {

@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <section class="container-lg my-5 py-5">
+    <section class="container-lg mt-5 py-md-5">
         <h3 class="text-uppercase font-weight-bold h4 text-center">
             Les avantages d'un e-commerce de proximité <span class="text-secondary">100% sans contact</span>
         </h3>
