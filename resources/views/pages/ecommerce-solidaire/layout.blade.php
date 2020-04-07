@@ -47,7 +47,7 @@
                             <span class="ff-rankings-caps text-size-2-5">Friends</span>
                             <span class="ff-north-avellion text-size-8 text-lineh-3">of</span>
                             <span class="ff-rankings-caps text-size-2-5">Presta</span>
-                            <img class="ml-0-5 mb-0-5" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/preston.svg') }}" class="rounded-circle" height="40" width="40" alt="Preston" />
+                            <img class="ml-0-5 mb-0-5" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/preston.svg') }}" height="40" width="40" alt="Preston" />
                         </h2>
                         <p class="mb-auto font-italic">
                             La communauté Friends-of-Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement.

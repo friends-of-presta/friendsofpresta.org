@@ -51,7 +51,9 @@
         </table>
 
         <div class="fixed-bottom bg-light pt-1">
-            {{ $inscriptionlist->links() }}
+            <div class="d-flex flex-row justify-content-center">
+                <div class="mx-auto">{{ $inscriptionlist->links() }}</div>
+            </div>
         </div>
     </div>
 @endsection
