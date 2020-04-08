@@ -13,6 +13,7 @@
 </head>
 
 <body class="p-1">
+    <a class="btn btn-secondary w-100 my-2 d-print-none" href="javascript:window.print()">Imprimer</a>
     <h1>Commandez<br> nos produits en ligne</h1>
     <h2 class="text-secondary">{{ htmlentities(trim(str_replace('https://','', $url),'/')) }}</h2>
 
