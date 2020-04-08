@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('title', 'e-Commerce Solidaire par la communauté Friends-of-Presta')</title>
+    <title>@yield('title', 'e-Commerce Solidaire par Friends of Presta')</title>
 
     @stack('head')
 
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-7 col-md-8 col-12 position-relative">
                     <div class="px-2 py-lg-2 mt-md-2">
-                        <h1 class="h1 text-secondary font-weight-bold ml-n2">EcommerceSolidaire</h1>
+                        <h1 class="h1 text-secondary font-weight-bold ml-n2">e-Commerce Solidaire</h1>
                         <h2 class="d-flex flex-wrap text-primary ml-lg-1 ml-n2 ml-sm-1 my-1 align-items-center">
                             <span class="ff-rankings-caps text-size-2-5">Friends</span>
                             <span class="ff-north-avellion text-size-8 text-lineh-3">of</span>
@@ -50,7 +50,7 @@
                             <img class="ml-0-5 mb-0-5" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/preston.svg') }}" height="40" width="40" alt="Preston" />
                         </h2>
                         <p class="mb-auto font-italic">
-                            La communauté Friends-of-Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement.
+                            La communauté Friends of Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement.
                         </p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
 
 
     <footer class="container-lg d-flex py-2 small">
-        <div>© friends-of-Presta - 2020 - Une question ? contactez-nous par email :
+        <div>© friends of Presta - 2020 - Une question ? contactez-nous par email :
             <script>document.write('<' + 'a' + ' ' + 'h' + 'r' + 'e' + 'f' + '=' + "'" + 'm' + 'a' + 'i' + 'l' + 't' + 'o' + '&' + '#' + '5' + '8' + ';' + 'c' + '&' + '#' + '3' + '7' +
                     ';' + '6' + '&' + '#' + '7' + '0' + ';' + 'n' + 't' + '%' + '&' + '#' + '5' + '4' + ';' + '1' + '&' + '#' + '3' + '7' + ';' + '6' + '&' + '#' + '5' +
                     '1' + ';' + 't' + '%' + '4' + '0' + 'e' + '&' + '#' + '9' + '9' + ';' + 'o' + '%' + '&' + '#' + '5' + '4' + ';' + 'D' + '&' + '#' + '1' + '0' + '9' +

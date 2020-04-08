@@ -1,8 +1,8 @@
 @extends('pages/ecommerce-solidaire/layout')
 
 @push('head')
-    <meta name="description" content="Plate-forme de crise proposant la création de sites e-commerce gratuits pour votre commerce ou TPE.">
-    <meta property="og:title" content="e-Commerce Solidaire par la communauté Friends-of-Presta"/>
+    <meta name="description" content="Plate-forme de crise proposant la création de sites e-commerce gratuits pour les petites entreprises.">
+    <meta property="og:title" content="e-Commerce Solidaire par Friends-of-Presta"/>
     <meta property="og:image" content="{{ asset('assets/images/pages/ecommerce-solidaire/header.jpg') }}"/>
     <meta property="og:type" content="website"/>
 @endpush
