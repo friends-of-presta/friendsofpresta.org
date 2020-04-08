@@ -19,11 +19,12 @@
 
         <h2>Notre action e-Commerce Solidaire</h2>
         <p>
-        La communauté Friends-of-Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux petites entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement. Rendez-vous sur <a href="https://friendsofpresta.org/ecommerce-solidaire">https://friendsofpresta.org/ecommerce-solidaire pour tout savoir sur notre action d'ecommerce solidaire</a></p>
+        La communauté Friends-of-Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux petites entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement. Rendez-vous sur <a href="/ecommerce-solidaire">https://friendsofpresta.org/ecommerce-solidaire pour tout savoir sur notre action d'ecommerce solidaire</a></p>
         </h2>
     </div>
 
     <div class="container-lg text-center">
+        <p>English version</p>
         <h1>Friends of Presta</h1>
         <p>This page presents Friends of Presta community, its missions, intents and publics.</p>
         <h2>People</h2>
