@@ -19,7 +19,7 @@ class Inscription extends Model
      * @var array
      */
     protected $fillable = [
-        'nom', 'prenom', 'telephone', 'email', 'siren', 'societe', 'salaries', 'statut', 'adresse', 'cp', 'ville', 'commentaires', 'slug', 'attribution', 'admin', 'status'
+        'nom', 'prenom', 'telephone', 'email', 'siren', 'societe', 'salaries', 'statut', 'adresse', 'cp', 'ville', 'commentaires', 'url', 'attribution', 'admin', 'status'
     ];
 
 

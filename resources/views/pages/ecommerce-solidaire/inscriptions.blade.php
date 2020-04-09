@@ -22,12 +22,12 @@
         @foreach ($inscriptionlist as $inscription)
             <div class="col-lg-4 col-sm-6 col-12 mt-2">
                 <div class="d-flex p-0-5">
-                    <a target="_blank" href="{{ route('pages.ecommercesolidaire.print') }}?url=https://{{ $inscription->slug }}.ecommerce-solidaire.fr">
+                    <a target="_blank" href="{{ route('pages.ecommercesolidaire.print') }}?url={{ $inscription->url }}">
                         <img height="50" src="{{ asset('assets/images/pages/ecommerce-solidaire/icons/scan.svg') }}" alt="" />
                     </a>
                     <div class="d-flex flex-column ml-0-5">
-                        <a target="_blank" href="https://{{ $inscription->slug }}.ecommerce-solidaire.fr">
-                            <span class="font-italic">{{ $inscription->slug }}.ecommerce-solidaire.fr</span>
+                        <a target="_blank" href="{{ $inscription->url }}">
+                            <span class="font-italic">{{ $inscription->url }}</span>
                         </a>
                         <span class="text-secondary">{{ $inscription->cp }} <span class="text-uppercase">{{ $inscription->ville }}</span></span>
                     </div>

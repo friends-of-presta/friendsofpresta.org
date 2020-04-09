@@ -67,8 +67,8 @@
             @foreach ($inscriptionlist as $inscription)
                 <tr>
                     <th scope="row">{{ $inscription->id }}</th>
-                    @if($inscription->slug)
-                    <td class="text-uppercase"><a target="_blank" href="https://{{ $inscription->slug }}.ecommerce-solidaire.fr">{{ $inscription->societe }}</a></td>
+                    @if($inscription->url)
+                    <td class="text-uppercase"><a target="_blank" href="{{ $inscription->url }}">{{ $inscription->societe }}</a></td>
                     @else
                     <td class="text-uppercase">{{ $inscription->societe }}</td>
                     @endif
