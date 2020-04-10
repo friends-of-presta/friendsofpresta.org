@@ -29,7 +29,12 @@ class EcommercesolidaireController extends Controller
 
     public function index()
     {
-        return view('pages/ecommerce-solidaire/index', ['sponsorlist' => Sponsor::get(), 'volonteerlist' => User::orderBy('id')->get()]);
+        return view('pages/ecommerce-solidaire/index', [
+            'sponsorlist' => Sponsor::get(),
+            'volonteerlist' => User::orderBy('id')->whereHas('roles', function($q){
+                $q->where('slug', 'benevole');
+            })->get()
+        ]);
     }
 
     public function legals()
@@ -44,7 +49,9 @@ class EcommercesolidaireController extends Controller
 
     public function inscriptions()
     {
-        return view('pages/ecommerce-solidaire/inscriptions', ['inscriptionlist' => Inscription::where('status', 'en ligne')->orderBy('cp')->get()]);
+        return view('pages/ecommerce-solidaire/inscriptions', [
+            'inscriptionlist' => Inscription::where('status', 'en ligne')->orderBy('cp')->get()
+        ]);
     }
 
     public function inscription(InscriptionRequest $request)

@@ -22,6 +22,14 @@ class Inscription extends Model
         'nom', 'prenom', 'telephone', 'email', 'siren', 'societe', 'salaries', 'statut', 'adresse', 'cp', 'ville', 'commentaires', 'url', 'attribution', 'admin', 'status'
     ];
 
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'status' => 'string',
+    ];
 
     /**
      * @var int
