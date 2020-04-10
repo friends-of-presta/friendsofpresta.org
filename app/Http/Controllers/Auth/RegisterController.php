@@ -62,7 +62,7 @@ class RegisterController extends Controller
             'company' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'role' => ['required', 'array', 'exists:roles'],
+            'role' => ['required', 'array', 'exists:roles,id'],
         ]);
     }
 
