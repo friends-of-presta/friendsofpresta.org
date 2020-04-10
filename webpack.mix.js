@@ -35,7 +35,8 @@ if (mix.inProduction()) {
             /active$/,
             /pagination$/,
             /page-/,
-            /btn-/
+            /page-/,
+            /badge-/
         ],
         enabled: true
     });

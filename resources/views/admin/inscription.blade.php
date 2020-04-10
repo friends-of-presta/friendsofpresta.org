@@ -10,8 +10,7 @@
             </ol>
         </nav>
 
-        <h1 class="mb-2 text-uppercase">{{ $inscription->societe }} <span
-                    class="badge badge-{{ $status[$inscription->status]['color'] }}">{{ $inscription->status }}</span>
+        <h1 class="mb-2 text-uppercase">{{ $inscription->societe }} <span class="badge badge-{{ $status[$inscription->status]['color'] }}">{{ $inscription->status }}</span>
         </h1>
 
         <h2 class="mb-1">Informations</h2>
