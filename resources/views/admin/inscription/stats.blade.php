@@ -23,8 +23,8 @@
             <tr>
                 <th>Nom</th>
                 <th>Société</th>
-                <th>En cours</th>
-                <th>En ligne</th>
+                <th><span class="badge badge-{{ $status['création en cours']['color'] }}">Création en cours</span></th>
+                <th><span class="badge badge-{{ $status['en ligne']['color'] }}">En ligne</span></th>
                 <th>Total</th>
             </tr>
             </thead>
