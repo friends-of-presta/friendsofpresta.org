@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header">Inscriptions #ecommercesolidaire</div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-center">
@@ -36,8 +36,13 @@
                     <div class="card-body">
                         <div class="display-2 text-center">{{ $users['total'] }}</div>
                     </div>
-                    @can('create', \App\User::class)
-                        <div class="card-footer"><a href="{{ route('register') }}" class="card-link">Créer un utilisateur</a></div>
+                    @can('viewAny', \App\Models\Inscription::class)
+                        <div class="card-footer">
+                            <a href="{{ route('admin.users') }}" class="card-link">Listing des utilisateurs</a>
+                            @can('create', \App\User::class)
+                                <a href="{{ route('register') }}" class="btn btn-sm btn-primary float-right">Créer</a>
+                            @endcan
+                        </div>
                     @endcan
                 </div>
             </div>
