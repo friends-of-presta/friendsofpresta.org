@@ -93,6 +93,8 @@
         </div>
         <a href="{{ route('pages.ecommercesolidaire.legals') }}" class="ml-auto">Mentions légales</a>
     </footer>
+
+    <x-facebook-chat />
 </div>
 </body>
 </html>
