@@ -33,7 +33,7 @@ class FacebookChat extends Component
      */
     public function render()
     {
-        if (App::environment('prod') and $this->appid) {
+        if ($this->appid) {
             return view('components.facebook.chat');
         }
 
