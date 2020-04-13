@@ -19,7 +19,8 @@
                             <div class="display-2 text-center mr-2">{{ array_sum($inscription) }}</div>
                             <div>
                                 <div>En attente : <strong>@can('viewAny', \App\Models\Inscription::class) <a href="{{ route('admin.inscriptions') . '?status=A+attribuer' }}"> @endcan {{ array_key_exists('A attribuer', $inscription) ? $inscription['A attribuer'] : '0' }} @can('viewAny', \App\Models\Inscription::class) </a> @endcan</strong></div>
-                                <div>En cours : <strong>{{ array_key_exists('création en cours', $inscription) ? $inscription['création en cours'] : '0' }}</strong></div>
+                                <div>En cours : <strong><a href="{{ route('admin.inscriptions') . '?status=création+en+cours' }}">{{ array_key_exists('création en cours', $inscription) ? $inscription['création en cours'] : '0' }}</a></strong></div>
+                                <div>En ligne : <strong><a href="{{ route('admin.inscriptions') . '?status=en+ligne' }}">{{ array_key_exists('en ligne', $inscription) ? $inscription['en ligne'] : '0' }}</a></strong></div>
                             </div>
                         </div>
                     </div>
