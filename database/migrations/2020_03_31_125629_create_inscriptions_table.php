@@ -29,7 +29,7 @@ class CreateInscriptionsTable extends Migration
             $table->string('ville')->default('');
             $table->longText('commentaires')->default('');
             $table->longText('admin')->default('');
-            $table->string('slug')->comment('Identifiant boutique')->default('');
+            $table->string('url')->default('');
             $table->unsignedBigInteger('attribution')->nullable();
             $table->timestamps();
 

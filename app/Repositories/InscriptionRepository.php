@@ -3,15 +3,24 @@ namespace App\Repositories;
 
 use App\Models\Inscription;
 use App\Http\Requests\InscriptionRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class InscriptionRepository
 {
     public $status = [
-        'A attribuer',
-        'création en cours',
-        'en ligne',
-        'abandonné'
+        'A attribuer' => [
+            'color' => 'warning'
+        ],
+        'création en cours' => [
+            'color' => 'info'
+        ],
+        'en ligne' => [
+            'color' => 'success'
+        ],
+        'abandonné' => [
+            'color' => 'dark'
+        ]
     ];
 
     /**
@@ -41,6 +50,44 @@ class InscriptionRepository
                 ->to($validated['email'], $validated['prenom'] . ' ' . $validated['nom'])
                 ->subject("Bienvenue dans l'initiative e-commerce solidaire");
         });
+
+        return true;
+    }
+
+    /**
+     * Set an attribution
+     *
+     * @param Request $request
+     * @param Inscription $inscription
+     * @return bool
+     */
+    public function attribution(Request $request, Inscription $inscription)
+    {
+        $validated = $request->validate([
+            'attribution' => 'required|exists:users,id'
+        ]);
+
+        $validated['status'] = 'création en cours';
+
+         // Insert inscription in DB
+        $inscription->fill($validated)->save();
+
+        return true;
+    }
+
+    /**
+     * Change status
+     *
+     * @param Inscription $inscription
+     * @param string $status
+     *
+     * @return bool
+     */
+    public function status(Inscription $inscription, $status)
+    {
+        // Insert inscription in DB
+        $inscription->status = $status;
+        $inscription->save();
 
         return true;
     }

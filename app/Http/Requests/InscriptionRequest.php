@@ -26,9 +26,7 @@ class InscriptionRequest extends FormRequest
      */
     protected function prepareForValidation()
     {
-        $this->merge([
-            'slug' => Str::slug($this->slug)
-        ]);
+        //
     }
 
     /**
@@ -50,15 +48,8 @@ class InscriptionRequest extends FormRequest
             'adresse' => ['required', 'max:255'],
             'cp' => ['required', 'max:255'],
             'ville' => ['required', 'max:255'],
-            'commentaires' => ['required'],
-            'slug' => ['max:255']
+            'commentaires' => ['required']
         ];
-
-        if (isset($this->inscription)) {
-            $rules['slug'][] = Rule::unique('inscription', 'slug')->ignore($this->inscription->id, 'id');
-        } else {
-            $rules['slug'][] = 'unique:inscription';
-        }
 
         return $rules;
     }

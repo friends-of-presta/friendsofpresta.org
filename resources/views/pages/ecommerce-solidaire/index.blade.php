@@ -530,7 +530,7 @@
                     situation de <strong>crise sanitaire et économique</strong> due au coronavirus en
                     France.<br />Nous sommes sensibles à la précarité économique des commerçants et Très Petites
                     Entreprises. <br />
-                    Notre action s'inscrit dans une démarche de <strong>crise sanitaire et économique</strong>
+                    Notre action s'inscrit dans <strong>un contexte de crise</strong>
                     pour limiter les pertes de produits alimentaires, faciliter le commerce de tout produit
                     utile et <strong>limiter l'impact économique</strong> au plus près de chacun d'entre nous.
                     L’objectif est bien de préparer le redémarrage qui aura lieu dans les prochaines semaines.
@@ -550,7 +550,7 @@
                     <li>appliquer un <strong>gel hydro-alcoolique</strong> ou se laver les mains régulièrement
                     </li>
                     <li>respecter la <strong>distance d'1 mètre</strong> avec les personnes alentour</li>
-                    <li> <strong>désinfection</strong> avec des lingettes des zones de contact (comme un caddy
+                    <li> <strong>désinfection</strong> avec des lingettes les zones de contact (comme un caddy
                         de supermarché)</li>
                     <li>tousser dans son coude ou dans un masque pour éviter les projections de gouttelettes
                     </li>

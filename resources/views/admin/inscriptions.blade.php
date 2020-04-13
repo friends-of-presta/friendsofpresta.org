@@ -23,7 +23,7 @@
                     <div class="col-md-3">
                         <select name="status" class="custom-select form-control @error('status') is-invalid @enderror">
                             <option value="">-- Choisir un status</option>
-                            @foreach($status as $statut)
+                            @foreach(array_keys($status) as $statut)
                             <option class="text-capitalize" value="{{ $statut }}" @if($statut == $request->get('status')) selected @endif>{{ $statut }}</option>
                             @endforeach
                         </select>
@@ -59,16 +59,15 @@
                 <th scope="col">Expert</th>
                 <th scope="col">Agence</th>
                 <th scope="col">Ville</th>
-                <th scope="col">Etat</th>
                 <th scope="col">Actions</th>
             </tr>
             </thead>
             <tbody>
             @foreach ($inscriptionlist as $inscription)
                 <tr>
-                    <th scope="row">{{ $inscription->id }}</th>
-                    @if($inscription->slug)
-                    <td class="text-uppercase"><a target="_blank" href="https://{{ $inscription->slug }}.ecommerce-solidaire.fr">{{ $inscription->societe }}</a></td>
+                    <th scope="row" id="l{{ $inscription->id }}">{{ $inscription->id }}</th>
+                    @if($inscription->url)
+                    <td class="text-uppercase"><a target="_blank" href="{{ $inscription->url }}">{{ $inscription->societe }}</a></td>
                     @else
                     <td class="text-uppercase">{{ $inscription->societe }}</td>
                     @endif
@@ -77,10 +76,21 @@
                     <td>{{ $inscription->user ? $inscription->user->name : '' }}</td>
                     <td>{{ $inscription->user ? $inscription->user->company : '' }}</td>
                     <td class="text-nowrap">{{ $inscription->user ? $inscription->user->city . ' (' . $inscription->user->department . ')' : '' }}</td>
-                    <td>{{ $inscription->status }}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button disabled data-toggle="tooltip" data-placement="top" title="Soon" type="button" class="btn btn-secondary btn-sm"><i class="far fa-eye"></i></button>
+                            @can('view', $inscription)
+                                <a href="{{ route('admin.inscription', ['inscription' => $inscription]) }}" class="btn btn-secondary btn-sm"><i class="far fa-eye"></i></a>
+                            @endcan
+                            @can('notif', $inscription)
+                                <a title="Notifier sur Slack"
+                                   href="{{ route('admin.inscription.notif', ['inscription' => $inscription]) }}"
+                                   class="btn btn-secondary btn-sm btn__action"
+                                   data-method="post"
+                                ><i class="fab fa-slack"></i></a>
+                            @endcan
+                            <span class="rounded-0 btn-sm text-nowrap btn-{{ $status[$inscription->status]['color'] }}">
+                                {{ $inscription->status }}
+                            </span>
                         </div>
                     </td>
                 </tr>

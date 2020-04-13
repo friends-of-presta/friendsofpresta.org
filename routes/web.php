@@ -28,5 +28,9 @@ Auth::routes();
 
 Route::group(["prefix"=>"/admin"], function() {
     Route::get('', 'AdminController@index')->name('admin');
-    Route::get('/inscriptions', 'AdminController@inscriptions')->name('admin.inscriptions');
+    Route::get('/inscriptions', 'Admin\InscriptionController@index')->name('admin.inscriptions');
+    Route::get('/inscription/{inscription}/status/{status}', 'Admin\InscriptionController@updateStatus')->name('admin.inscription.status')->middleware('can:updateStatus,inscription,status');
+    Route::get('/inscription/{inscription}', 'Admin\InscriptionController@show')->name('admin.inscription');
+    Route::put('/inscription/{inscription}', 'Admin\InscriptionController@update');
+    Route::post('/inscription/{inscription}/notif', 'Admin\InscriptionController@notif')->name('admin.inscription.notif')->middleware('can:notif,inscription');
 });

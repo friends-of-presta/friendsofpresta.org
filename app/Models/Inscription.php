@@ -19,9 +19,17 @@ class Inscription extends Model
      * @var array
      */
     protected $fillable = [
-        'nom', 'prenom', 'telephone', 'email', 'siren', 'societe', 'salaries', 'statut', 'adresse', 'cp', 'ville', 'commentaires', 'slug', 'attribution', 'admin', 'status'
+        'nom', 'prenom', 'telephone', 'email', 'siren', 'societe', 'salaries', 'statut', 'adresse', 'cp', 'ville', 'commentaires', 'url', 'attribution', 'admin', 'status'
     ];
 
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'status' => 'string',
+    ];
 
     /**
      * @var int

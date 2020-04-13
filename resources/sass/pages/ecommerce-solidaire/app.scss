@@ -111,21 +111,3 @@ label {
 .text-tertiary {
   color: $tertiary;
 }
-
-// Impression afffiche
-#affiche {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.35rem;
-  }
-}
-@media print {
-  .container {
-    width: auto;
-  }
-  .d-print-col-12 {
-    width: 100% !important;
-  }
-}
