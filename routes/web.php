@@ -30,6 +30,7 @@ Route::group(["prefix"=>"/admin"], function() {
     Route::get('', 'AdminController@index')->name('admin');
 
     Route::get('/inscriptions', 'Admin\InscriptionController@index')->name('admin.inscriptions');
+    Route::get('/inscriptions/stats', 'Admin\InscriptionController@stats')->name('admin.inscriptions.stats');
     Route::group(["prefix"=>"/inscription"], function() {
         Route::get('/{inscription}', 'Admin\InscriptionController@show')->name('admin.inscription');
         Route::put('/{inscription}', 'Admin\InscriptionController@update');

@@ -3,20 +3,28 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inscription;
+use App\Repositories\UserRepository;
 use App\User;
-use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
+    /**
+     * The repository instance.
+     *
+     * @var array
+     */
+    protected $repository = array();
 
     /**
-     * Create a new controller instance.
-     *
      * AdminController constructor.
+     *
+     * @param UserRepository $user
      */
-    public function __construct()
+    public function __construct(UserRepository $user)
     {
         $this->middleware('auth');
+
+        $this->repository = compact('user');
     }
 
     /**
@@ -31,18 +39,7 @@ class AdminController extends Controller
             'users' => [
                 'total' => User::count()
             ],
-            'top' => DB::table('inscriptions')->select(
-                    'users.name',
-                    DB::raw('COUNT(IF(inscriptions.status="création en cours",inscriptions.id, NULL)) as inprogress'),
-                    DB::raw('COUNT(IF(inscriptions.status="en ligne",inscriptions.id, NULL)) AS online'),
-                    DB::raw('COUNT(inscriptions.id) AS total')
-                )
-                    ->join('users', 'users.id', '=', 'inscriptions.attribution')
-                    ->where('inscriptions.status', '<>', 'abandonné')
-                    ->groupBy('users.name')
-                    ->orderBy('total', 'desc')
-                    ->limit(5)
-                    ->get()
+            'top' => $this->repository['user']->getStatsES(3)
         ]);
     }
 }

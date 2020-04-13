@@ -32,7 +32,7 @@
 
             <div class="col-4">
                 <div class="card">
-                    <div class="card-header">Top 5 #ecommercesolidaire</div>
+                    <div class="card-header">Podium #ecommercesolidaire</div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-center">
                             <table class="table table-striped">
@@ -55,6 +55,7 @@
                             </table>
                         </div>
                     </div>
+                    <div class="card-footer"><a href="{{ route('admin.inscriptions.stats') }}" class="card-link">Listing complet</a></div>
                 </div>
             </div>
 

@@ -49,7 +49,7 @@ class InscriptionController extends Controller
                 $inscription->where($key,$input);
         }
 
-        return view('admin.inscriptions', [
+        return view('admin.inscription.inscriptions', [
             'inscriptionlist' => $inscription->paginate(),
             'userlist' => $this->repository['user']->getExperts(),
             'status' => $this->repository['inscription']::getStatus(),
@@ -67,7 +67,7 @@ class InscriptionController extends Controller
         $status = $this->repository['inscription']::getStatus();
         $userlist = $this->repository['user']->getExperts();
 
-        return view('admin.inscription', compact('inscription', 'status', 'userlist'));
+        return view('admin.inscription.inscription', compact('inscription', 'status', 'userlist'));
     }
 
     /**
@@ -92,5 +92,15 @@ class InscriptionController extends Controller
         Notification::route('slack', config('notification.slack'))->notify(new InscriptionNotification($inscription));
 
         return response()->json([]);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function stats()
+    {
+        $userlist = $this->repository['user']->getStatsES(15);
+
+        return view('admin.inscription.stats', compact('userlist'));
     }
 }
