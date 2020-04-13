@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-4">
-                <div class="card h-100">
+                <div class="card">
                     <div class="card-header">Inscriptions #ecommercesolidaire</div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-center">
@@ -27,6 +27,34 @@
                     @can('viewAny', \App\Models\Inscription::class)
                         <div class="card-footer"><a href="{{ route('admin.inscriptions') }}" class="card-link">Listing des inscriptions</a></div>
                     @endcan
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">Top 5 #ecommercesolidaire</div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                        <th>En cours</th>
+                                        <th>En ligne</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                            @foreach($top as $user)
+                                <tr>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->inprogress }}</td>
+                                    <td>{{ $user->online }}</td>
+                                    <td>{{ $user->total }}</td>
+                                </tr>
+                            @endforeach
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
 
