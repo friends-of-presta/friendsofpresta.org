@@ -10,7 +10,8 @@
             </ol>
         </nav>
 
-        <h1 class="mb-2 text-uppercase">{{ $inscription->societe }} <span class="badge badge-{{ $status[$inscription->status]['color'] }}">{{ $inscription->status }}</span>
+        <h1 class="mb-2 text-uppercase">{{ $inscription->societe }} <span
+                    class="badge badge-{{ $status[$inscription->status]['color'] }}">{{ $inscription->status }}</span>
         </h1>
 
         <h2 class="mb-1">Informations</h2>
@@ -110,32 +111,73 @@
             </table>
         @endif
 
-        <h2 class="mb-1">Actions</h2>
-        @if (!$inscription->user and Auth::user()->can('update', $inscription))
-            <form method="POST" action="{{ route('admin.inscription', ['inscription' => $inscription]) }}">
+        @can('update', $inscription)
+            <h2 class="mb-1">Actions</h2>
+            <form
+                    method="POST"
+                    class="row"
+                    action="{{ route('admin.inscription', ['inscription' => $inscription]) }}"
+            >
                 @csrf
                 @method('PUT')
 
-                <div class="form-row">
-                    <div class="col-md-8">
-                        <select name="attribution" required value="{{ old('attribution') }}" class="custom-select form-control @error('attribution') is-invalid @enderror">
+                @if($inscription->status == 'A attribuer')
+                    <div class="col-md">
+                        <select name="attribution" required value="{{ old('attribution') }}"
+                                class="custom-select form-control @error('attribution') is-invalid @enderror">
                             <option value="">-- Choisir un expert</option>
                             @foreach($userlist as $user)
                                 <option value="{{ $user->id }}">{{ $user->name }}</option>
                             @endforeach
                         </select>
                     </div>
-                    <div class="col-md-4">
-                        <div class="btn-group w-100">
-                            <button type="submit" class="btn btn-info">Attribuer</button>
-                            <a href="{{ route('admin.inscription.status', ['inscription' => $inscription, 'status' => 'abandonné']) }}" class="btn btn-dark">Abandonner</a>
+
+                    <div class="col-md">
+                        <button type="submit" name="status" value="création en cours" class="w-100 btn btn-info">
+                            Attribuer à l'expert
+                        </button>
+                    </div>
+                @endif
+
+                @if($inscription->status == 'création en cours')
+                    <div class="col-md">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">URL</span>
+                            </div>
+                            <input
+                                    type="url"
+                                    name="url"
+                                    required
+                                    value="{{ old('url', $inscription->url) }}"
+                                    class="form-control @error('url') is-invalid @enderror"
+                                    pattern="https?://.*"
+                                    placeholder="Ex : https://laboutique.ecommerce-solidaire.fr"
+                            />
                         </div>
                     </div>
+
+                    <div class="col-md">
+                        <button
+                                type="submit"
+                                name="status"
+                                value="en ligne"
+                                class="w-100 btn btn-success"
+                        >Valider la mise en ligne du site
+                        </button>
+                    </div>
+                @endif
+
+                <div class="col-md">
+                    <button
+                            type="submit"
+                            name="status"
+                            value="abandonné"
+                            class="w-100 btn btn-dark"
+                            formnovalidate
+                    >Abandonner l'inscription</button>
                 </div>
             </form>
-        @endif
-        @can('updateStatus', [$inscription, 'en ligne'])
-            <a href="{{ route('admin.inscription.status', ['inscription' => $inscription, 'status' => 'en ligne']) }}" class="w-100 btn btn-success">En ligne</a>
         @endcan
     </div>
 @endsection

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Mail;
 
 class InscriptionRepository
 {
-    public $status = [
+    public static $status = [
         'A attribuer' => [
             'color' => 'warning'
         ],
@@ -22,6 +22,11 @@ class InscriptionRepository
             'color' => 'dark'
         ]
     ];
+
+    public static function getStatus()
+    {
+        return self::$status;
+    }
 
     /**
      * Save an inscription
@@ -55,53 +60,26 @@ class InscriptionRepository
     }
 
     /**
-     * Set an attribution
+     * Update an inscription
      *
-     * @param Request $request
+     * @param InscriptionRequest $request
      * @param Inscription $inscription
      * @return bool
      */
-    public function attribution(Request $request, Inscription $inscription)
+    public function update(InscriptionRequest $request, Inscription $inscription)
     {
-        $validated = $request->validate([
-            'attribution' => 'required|exists:users,id'
-        ]);
-
-        $validated['status'] = 'création en cours';
-
-         // Insert inscription in DB
-        $inscription->fill($validated)->save();
+        $inscription->fill($request->validated())->save();
 
         return true;
     }
 
-    /**
-     * Change status
-     *
-     * @param Inscription $inscription
-     * @param string $status
-     *
-     * @return bool
-     */
-    public function status(Inscription $inscription, $status)
-    {
-        // Insert inscription in DB
-        $inscription->status = $status;
-        $inscription->save();
 
-        return true;
-    }
 
     /**
-     * All inscription
+     * @return mixed
      */
-    public function all(Inscription $inscription = null)
+    public function getOnline()
     {
-        $inscriptionlist = Inscription::limit(10);
-        if ($inscription) {
-            $inscriptionlist->where('id', '<>', $inscription->id);
-        }
-
-        return $inscriptionlist->get();
+        return Inscription::where('status', 'en ligne')->orderBy('cp')->get();
     }
 }

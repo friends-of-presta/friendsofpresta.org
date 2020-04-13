@@ -5,35 +5,35 @@ namespace App\Http\Controllers\Pages;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\InscriptionRequest;
 use App\Repositories\InscriptionRepository;
+use App\Repositories\UserRepository;
 use App\Models\Sponsor;
-use App\Models\Inscription;
-use App\User;
 use Illuminate\Http\Request;
 
 class EcommercesolidaireController extends Controller
 {
     /**
-     * The repository instance.
+     * The repository instances.
+     *
+     * @var array
      */
-    protected $repository;
+    protected $repository = array();
 
     /**
      * EcommercesolidaireController constructor.
      *
-     * @param InscriptionRepository $repository
+     * @param InscriptionRepository $inscription
+     * @param UserRepository $user
      */
-    public function __construct(InscriptionRepository $repository)
+    public function __construct(InscriptionRepository $inscription, UserRepository $user)
     {
-        $this->repository = $repository;
+        $this->repository = compact('inscription', 'user');
     }
 
     public function index()
     {
         return view('pages/ecommerce-solidaire/index', [
             'sponsorlist' => Sponsor::get(),
-            'volonteerlist' => User::orderBy('id')->whereHas('roles', function($q){
-                $q->where('slug', 'benevole');
-            })->get()
+            'volonteerlist' => $this->repository['user']->getExperts()
         ]);
     }
 
@@ -50,12 +50,12 @@ class EcommercesolidaireController extends Controller
     public function inscriptions()
     {
         return view('pages/ecommerce-solidaire/inscriptions', [
-            'inscriptionlist' => Inscription::where('status', 'en ligne')->orderBy('cp')->get()
+            'inscriptionlist' => $this->repository['inscription']->getOnline()
         ]);
     }
 
     public function inscription(InscriptionRequest $request)
     {
-        $this->repository->save($request);
+        $this->repository['inscription']->save($request);
     }
 }

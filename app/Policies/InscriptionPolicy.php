@@ -18,7 +18,7 @@ class InscriptionPolicy
      */
     public function viewAny(User $user)
     {
-        return $user->hasRole(['benevole', 'superadmin']);
+        return $user->hasRole(['expert', 'superadmin']);
     }
 
     /**
@@ -30,7 +30,7 @@ class InscriptionPolicy
      */
     public function view(User $user, Inscription $inscription)
     {
-        return $user->hasRole(['benevole', 'superadmin']);
+        return $user->hasRole(['expert', 'superadmin']);
     }
 
     /**
@@ -66,22 +66,6 @@ class InscriptionPolicy
     public function update(User $user, Inscription $inscription)
     {
         return ($user->hasRole(['superadmin']) or $user->id === $inscription->attribution) and $inscription->status != 'abandonné';
-    }
-
-    /**
-     * Determine whether the user can update the status inscription.
-     *
-     * @param User $user
-     * @param Inscription $inscription
-     * @param  $status
-     * @return mixed
-     */
-    public function updateStatus(User $user, Inscription $inscription, $status)
-    {
-        return (
-            ($user->hasRole(['superadmin']) and $status == 'abandonné' and $inscription->status == 'A attribuer') or
-            (($user->hasRole(['superadmin']) or $user->id === $inscription->attribution) and $status == 'en ligne' and $inscription->status == 'création en cours')
-        );
     }
 
     /**
