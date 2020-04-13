@@ -89,7 +89,7 @@ class InscriptionController extends Controller
      */
     public function notif(Inscription $inscription)
     {
-        Notification::route('slack', env('SLACK_HOOK'))->notify(new InscriptionNotification($inscription));
+        Notification::route('slack', config('notification.slack'))->notify(new InscriptionNotification($inscription));
 
         return response()->json([]);
     }
