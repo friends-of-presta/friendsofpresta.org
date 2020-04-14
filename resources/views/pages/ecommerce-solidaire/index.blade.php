@@ -264,8 +264,8 @@
     <section class="container-lg mt-5">
         <div class="text-center">
             <h3 class="text-uppercase text-secondary font-weight-bold">Les extensions régionales s’engagent aux côtés de Friends-of-Presta</h3>
-            <p>Les extensions régionales bretonne <strong>.bzh</strong>, alsacienne <strong>.alsace</strong> et parisienne <strong>.paris</strong> rejoignent l’initiative lancée par le collectif Friends of Presta. Acteurs engagés du numérique, elles relaient ainsi auprès des TPE de leur territoire notre offre solidaire qui permet aux professionnels de l’alimentaire et aux fournisseurs de produits essentiels de proposer une vente à distance à leurs clients confinés et d’organiser au mieux leurs livraisons ou retraits.
-            </p><p>Votre adresse de boutique en ligne prendra alors la forme suivante : monentreprise.ecommerce-solidaire.bzh, monentreprise.ecommerce-solidaire.alsace ou monentreprise.ecommerce-solidaire.paris</p>
+            <p>Les extensions régionales bretonne <strong>.bzh</strong>, parisienne <strong>.paris</strong>, corse <strong>.corsica</strong> et alsacienne <strong>.alsace</strong> rejoignent l’initiative lancée par le collectif Friends of Presta. Acteurs engagés du numérique, elles relaient ainsi auprès des TPE de leur territoire notre offre solidaire qui permet aux professionnels de l’alimentaire et aux fournisseurs de produits essentiels de proposer une vente à distance à leurs clients confinés et d’organiser au mieux leurs livraisons ou retraits.
+            </p><p>Votre adresse de boutique en ligne prendra alors la forme suivante : monentreprise.ecommerce-solidaire.bzh, monentreprise.ecommerce-solidaire.alsace, monentreprise.ecommerce-solidaire.corsica ou monentreprise.ecommerce-solidaire.paris</p>
         </div>
 
         <div class="d-flex flex-md-row flex-column mt-2">
@@ -280,6 +280,9 @@
             <div class="col text-center">
                 <a href="http://bienvenue.paris" target="_blank"><img height="50" src="{{ asset('assets/images/pages/ecommerce-solidaire/ext/paris.png') }}" alt=".paris"/></a>
                 <p class="mt-1 font-italic">Vous avez monté votre affaire à Paris et vous en êtes fier ? Confortez votre ancrage parisien avec une adresse web dans la même veine.</p></div>
+            <div class="col text-center">
+                <a href="https://www.puntu.corsica/" target="_blank"><img height="50" src="{{ asset('assets/images/pages/ecommerce-solidaire/ext/corsica.png') }}" alt=".corsica"/></a>
+                <p class="mt-1 font-italic">Le seul point de l’île visible du monde entier. le .corsica c'est affirmer son attachement au territoire Corse, à ses valeurs, à sa culture, à son patrimoine.</p></div>
         </div>
     </section>
 
