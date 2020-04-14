@@ -264,7 +264,7 @@
     <section class="container-lg mt-5">
         <div class="text-center">
             <h3 class="text-uppercase text-secondary font-weight-bold">Les extensions régionales s’engagent aux côtés de Friends-of-Presta</h3>
-            <p>Les extensions régionales bretonne <strong>.bzh</strong>, parisienne <strong>.paris</strong> corse <strong>.corsica</strong> et alsacienne <strong>.alsace</strong> rejoignent l’initiative lancée par le collectif Friends of Presta. Acteurs engagés du numérique, elles relaient ainsi auprès des TPE de leur territoire notre offre solidaire qui permet aux professionnels de l’alimentaire et aux fournisseurs de produits essentiels de proposer une vente à distance à leurs clients confinés et d’organiser au mieux leurs livraisons ou retraits.
+            <p>Les extensions régionales bretonne <strong>.bzh</strong>, parisienne <strong>.paris</strong>, corse <strong>.corsica</strong> et alsacienne <strong>.alsace</strong> rejoignent l’initiative lancée par le collectif Friends of Presta. Acteurs engagés du numérique, elles relaient ainsi auprès des TPE de leur territoire notre offre solidaire qui permet aux professionnels de l’alimentaire et aux fournisseurs de produits essentiels de proposer une vente à distance à leurs clients confinés et d’organiser au mieux leurs livraisons ou retraits.
             </p><p>Votre adresse de boutique en ligne prendra alors la forme suivante : monentreprise.ecommerce-solidaire.bzh, monentreprise.ecommerce-solidaire.alsace, monentreprise.ecommerce-solidaire.corsica ou monentreprise.ecommerce-solidaire.paris</p>
         </div>
 
