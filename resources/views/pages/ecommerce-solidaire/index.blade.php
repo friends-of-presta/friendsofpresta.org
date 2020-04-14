@@ -280,6 +280,9 @@
             <div class="col text-center">
                 <a href="http://bienvenue.paris" target="_blank"><img height="50" src="{{ asset('assets/images/pages/ecommerce-solidaire/ext/paris.png') }}" alt=".paris"/></a>
                 <p class="mt-1 font-italic">Vous avez monté votre affaire à Paris et vous en êtes fier ? Confortez votre ancrage parisien avec une adresse web dans la même veine.</p></div>
+            <div class="col text-center">
+                <a href="https://www.puntu.corsica/" target="_blank"><img height="50" src="{{ asset('assets/images/pages/ecommerce-solidaire/ext/corsica.png') }}" alt=".corsica"/></a>
+                <p class="mt-1 font-italic">Le seul point de l’île visible du monde entier. le .corsica c'est affirmer son attachement au territoire Corse, à ses valeurs, à sa culture, à son patrimoine.</p></div>
         </div>
     </section>
 
