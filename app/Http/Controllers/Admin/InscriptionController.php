@@ -100,7 +100,7 @@ class InscriptionController extends Controller
     public function stats()
     {
         $status = $this->repository['inscription']::getStatus();
-        $userlist = $this->repository['user']->getStatsES(15);
+        $userlist = $this->repository['inscription']->getUsersRankings(15);
 
         return view('admin.inscription.stats', compact('userlist', 'status'));
     }

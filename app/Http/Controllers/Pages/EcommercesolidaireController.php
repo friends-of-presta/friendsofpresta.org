@@ -33,7 +33,7 @@ class EcommercesolidaireController extends Controller
     {
         return view('pages/ecommerce-solidaire/index', [
             'sponsorlist' => Sponsor::get(),
-            'volonteerlist' => $this->repository['user']->getExperts()
+            'volonteerlist' => $this->repository['user']->getExperts('id')
         ]);
     }
 

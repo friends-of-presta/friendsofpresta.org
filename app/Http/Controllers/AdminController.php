@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inscription;
-use App\Repositories\UserRepository;
+use App\Repositories\InscriptionRepository;
 use App\User;
 
 class AdminController extends Controller
@@ -18,13 +18,13 @@ class AdminController extends Controller
     /**
      * AdminController constructor.
      *
-     * @param UserRepository $user
+     * @param InscriptionRepository $user
      */
-    public function __construct(UserRepository $user)
+    public function __construct(InscriptionRepository $inscription)
     {
         $this->middleware('auth');
 
-        $this->repository = compact('user');
+        $this->repository = compact('inscription');
     }
 
     /**
@@ -39,7 +39,7 @@ class AdminController extends Controller
             'users' => [
                 'total' => User::count()
             ],
-            'top' => $this->repository['user']->getStatsES(3)
+            'top' => $this->repository['inscription']->getUsersRankings(3)
         ]);
     }
 }
