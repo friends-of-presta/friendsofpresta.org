@@ -37,24 +37,26 @@
                     <div class="card-header">Podium #ecommercesolidaire</div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-center">
-                            <table class="table table-striped table-responsive">
-                                <thead>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nom</th>
+                                            <th>En cours</th>
+                                            <th>En ligne</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                @foreach($top as $user)
                                     <tr>
-                                        <th>Nom</th>
-                                        <th>En cours</th>
-                                        <th>En ligne</th>
-                                        <th>Total</th>
+                                        <td>{{ $user->name }}</td>
+                                        <td>{{ $user->inprogress }}</td>
+                                        <td>{{ $user->online }}</td>
+                                        <td>{{ $user->total }}</td>
                                     </tr>
-                                </thead>
-                            @foreach($top as $user)
-                                <tr>
-                                    <td>{{ $user->name }}</td>
-                                    <td>{{ $user->inprogress }}</td>
-                                    <td>{{ $user->online }}</td>
-                                    <td>{{ $user->total }}</td>
-                                </tr>
-                            @endforeach
-                            </table>
+                                @endforeach
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <div class="card-footer"><a href="{{ route('admin.inscriptions.stats') }}" class="card-link">Listing complet</a></div>
