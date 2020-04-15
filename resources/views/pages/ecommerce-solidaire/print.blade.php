@@ -27,7 +27,11 @@
             https://friendsofpresta.org/ecommerce-solidaire
         </a>
     </p>
-    <div>
-        <img src="{{ asset('assets/images/pages/ecommerce-solidaire/friendsofv2.2.svg') }}" />
+    <div class="d-flex align-items-center justify-content-center">
+        <img class="img-fluid mr-2" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo.svg') }}" width="200" alt="Logo" />
+        <div>
+            <h1 class="h2 text-secondary font-weight-bold ml-n2 mb-0">e-Commerce Solidaire</h1>
+            <img class="ml-lg-1 ml-n2 ml-sm-1 my-1" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/fop.svg') }}" height="30" alt="Friends-of-Presta" />
+        </div>
     </div>
 </body>

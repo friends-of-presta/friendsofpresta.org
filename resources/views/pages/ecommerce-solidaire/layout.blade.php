@@ -42,13 +42,8 @@
                 </div>
                 <div class="col-lg-7 col-md-8 col-12 position-relative">
                     <div class="px-2 py-lg-2 mt-md-2">
-                        <h1 class="h1 text-secondary font-weight-bold ml-n2">e-Commerce Solidaire</h1>
-                        <h2 class="d-flex flex-wrap text-primary ml-lg-1 ml-n2 ml-sm-1 my-1 align-items-center">
-                            <span class="ff-rankings-caps text-size-2-5">Friends</span>
-                            <span class="ff-north-avellion text-size-8 text-lineh-3">of</span>
-                            <span class="ff-rankings-caps text-size-2-5">Presta</span>
-                            <img class="ml-0-5 mb-0-5" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/preston.svg') }}" height="40" width="40" alt="Preston" />
-                        </h2>
+                        <h1 class="h1 text-secondary font-weight-bold ml-n2 mb-0">e-Commerce Solidaire</h1>
+                        <img class="ml-lg-1 ml-n2 ml-sm-1 my-1" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/fop.svg') }}" height="30" alt="Friends-of-Presta" />
                         <p class="mb-auto font-italic">
                             La communauté Friends of Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement.
                         </p>

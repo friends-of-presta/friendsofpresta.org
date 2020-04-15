@@ -2,38 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Farro:wght@100,200,300,400,500,600,700,800,900&family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
-@font-face {
-  font-family: "north_avellionregular";
-  src: url("../../../fonts/north_avellion-webfont.woff2") format("woff2"),
-  url("../../../fonts/north_avellion-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "rankings_capsregular";
-  src: url("../../../fonts/rankings_caps-webfont.woff2") format("woff2"),
-  url("../../../fonts/rankings_caps-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.ff-rankings-caps {
-  font-family: "rankings_capsregular";
-}
-.ff-north-avellion {
-  font-family: "north_avellionregular";
-}
-
-.text-size-2-5 {
-  font-size: 2.5rem;
-}
-.text-size-8 {
-  font-size: 8rem;
-}
-.text-lineh-3 {
-  line-height: 3rem;
-}
 .small {
   font-size: $small-font-size;
 }
