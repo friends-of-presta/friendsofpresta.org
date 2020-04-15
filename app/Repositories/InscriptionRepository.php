@@ -3,9 +3,9 @@ namespace App\Repositories;
 
 use App\Models\Inscription;
 use App\Http\Requests\InscriptionRequest;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Cache;
 
 class InscriptionRepository
 {
@@ -102,5 +102,35 @@ class InscriptionRepository
             ->groupBy('users.name', 'users.company')
             ->orderBy('total', 'desc')
             ->paginate($perPage);
+    }
+
+    /**
+     * @param int $cache Cache duration in second
+     *
+     * @return mixed
+     */
+    public function getStatsShops($cache = 3600)
+    {
+        return Cache::remember('ecommerce-solidaire.stats-shops', $cache, function () {
+            $stats = [
+                'total' => 0,
+                'ca' => 0
+            ];
+
+            $db = DB::connection('mysql_global');
+            foreach($db->select('SHOW DATABASES') as $database) {
+                if($db->table('information_schema.tables')->select('table_schema')->where('table_schema', $database->Database)->where('table_name', 'ps_orders')->count()) {
+                    $result = $db
+                        ->table(DB::raw('`' . $database->Database.'`.ps_orders'))
+                        ->select(DB::raw('COUNT(*) as total, SUM(total_products_wt) as ca'))
+                        ->first();
+
+                    $stats['total'] += $result->total;
+                    $stats['ca'] += $result->ca;
+                }
+            }
+
+            return $stats;
+        });
     }
 }

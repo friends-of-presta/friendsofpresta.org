@@ -11,7 +11,7 @@
         <h1 class="mb-2">Dashboard</h1>
 
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 mb-2">
                 <div class="card h-100">
                     <div class="card-header">Inscriptions #ecommercesolidaire</div>
                     <div class="card-body">
@@ -30,12 +30,12 @@
                 </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-md-4 mb-2">
                 <div class="card">
                     <div class="card-header">Podium #ecommercesolidaire</div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-center">
-                            <table class="table table-striped">
+                            <table class="table table-striped table-responsive">
                                 <thead>
                                     <tr>
                                         <th>Nom</th>
@@ -59,20 +59,23 @@
                 </div>
             </div>
 
-            <div class="col-4">
+            @can('viewOrdersNumber', \App\Models\Inscription::class)
+            <div class="col-md-4 mb-2">
                 <div class="card h-100">
                     <div class="card-header">Total commandes #ecommercesolidaire</div>
                     <div class="card-body">
-                        <div class="d-flex h-100 align-items-center justify-content-center">
-                            <div class="display-2 text-center mr-2">{{ $orders['total'] }}</div>
+                        <div class="d-flex h-100 flex-column align-items-center justify-content-center">
+                            <div class="display-2 text-center">{{ $orders['total'] }}</div>
+                            @can('viewOrdersCA', \App\Models\Inscription::class)
+                            <div class="display-4 text-center">{{ $orders['ca'] }} €</div>
+                            @endcan
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            @endcan
 
-        <div class="row mt-2">
-            <div class="col-4">
+            <div class="col-md-4 mb-2">
                 <div class="card">
                     <div class="card-header">Utilisateurs</div>
                     <div class="card-body">

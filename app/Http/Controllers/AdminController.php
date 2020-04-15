@@ -37,23 +37,13 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $total = 0;
-        $db = DB::connection('mysql_global');
-        foreach($db->select('SHOW DATABASES') as $database) {
-           if($db->table('information_schema.tables')->select('table_schema')->where('table_schema', $database->Database)->where('table_name', 'orders')->count()) {
-               $total += $db->table($database->Database.'.orders')->select('*')->count();
-           }
-        }
-
         return view('dashboard', [
             'inscription' => Inscription::groupBy('status')->selectRaw('count(*) as total, status')->where('status', '<>', 'abandonné')->pluck('total', 'status')->all(),
             'users' => [
                 'total' => User::count()
             ],
             'top' => $this->repository['inscription']->getUsersRankings(3),
-            'orders' => [
-                'total' => $total
-            ]
+            'orders' => $this->repository['inscription']->getStatsShops()
         ]);
     }
 }

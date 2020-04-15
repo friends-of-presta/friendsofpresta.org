@@ -46,6 +46,28 @@ class InscriptionPolicy
     }
 
     /**
+     * Determine whether the user can view the number of orders in shop.
+     *
+     * @param User $user
+     * @return mixed
+     */
+    public function viewOrdersNumber(User $user)
+    {
+        return $user->hasRole(['expert', 'superadmin']);
+    }
+
+    /**
+     * Determine whether the user can view the CA of orders in shop.
+     *
+     * @param User $user
+     * @return mixed
+     */
+    public function viewOrdersCA(User $user)
+    {
+        return $user->hasRole(['superadmin']);
+    }
+
+    /**
      * Determine whether the user can create inscriptions.
      *
      * @param User $user
