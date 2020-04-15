@@ -67,7 +67,7 @@
                         <div class="d-flex h-100 flex-column align-items-center justify-content-center">
                             <div class="display-2 text-center">{{ $orders['total'] }}</div>
                             @can('viewOrdersCA', \App\Models\Inscription::class)
-                            <div class="display-4 text-center">{{ $orders['ca'] }} €</div>
+                            <div class="display-4 text-center">{{ number_format($orders['ca'], 2, ',', ' ') }} €</div>
                             @endcan
                         </div>
                     </div>
