@@ -12,10 +12,10 @@
 
         <div class="row">
             <div class="col-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-header">Inscriptions #ecommercesolidaire</div>
                     <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-center">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
                             <div class="display-2 text-center mr-2">{{ array_sum($inscription) }}</div>
                             <div>
                                 <div>En attente : <strong>@can('viewAny', \App\Models\Inscription::class) <a href="{{ route('admin.inscriptions') . '?status=A+attribuer' }}"> @endcan {{ array_key_exists('A attribuer', $inscription) ? $inscription['A attribuer'] : '0' }} @can('viewAny', \App\Models\Inscription::class) </a> @endcan</strong></div>
@@ -59,6 +59,19 @@
                 </div>
             </div>
 
+            <div class="col-4">
+                <div class="card h-100">
+                    <div class="card-header">Total commandes #ecommercesolidaire</div>
+                    <div class="card-body">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <div class="display-2 text-center mr-2">{{ $orders['total'] }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
             <div class="col-4">
                 <div class="card">
                     <div class="card-header">Utilisateurs</div>
