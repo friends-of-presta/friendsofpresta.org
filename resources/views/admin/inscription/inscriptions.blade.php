@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', "Inscriptions")
+
 @section('content')
     <div class="container-fluid p-1 px-2">
         <nav aria-label="breadcrumb">
