@@ -37,6 +37,9 @@ if (mix.inProduction()) {
             /page-/,
             /bg-/,
             /badge-/,
+            /fa-sort/,
+            /fa-up/,
+            /fa-down/,
             /btn-/
         ],
         enabled: true
