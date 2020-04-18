@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use EloquentFilter\Filterable;
 
 class Inscription extends Model
 {
+    use Filterable;
+
     /**
      * The table associated with the model.
      *

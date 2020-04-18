@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Notification;
 use App\Notifications\InscriptionNotification;
 use App\Repositories\UserRepository;
 use App\Repositories\InscriptionRepository;
-use App\Http\Requests\Filters\InscriptionRequest as Filters;
+use App\Http\Requests\Filters\InscriptionRequest as InscriptionRequestFilters;
 use App\Http\Requests\InscriptionRequest;
 
 class InscriptionController extends Controller
@@ -35,22 +35,17 @@ class InscriptionController extends Controller
     }
 
     /**
-     * @param Filters $request
+     * @param InscriptionRequestFilters $request
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Filters $request)
+    public function index(InscriptionRequestFilters $request)
     {
         $inscription = Inscription::orderBy('id', 'desc');
-        foreach (array_filter($request->validated()) as $key => $input) {
-            if (in_array($key, ['societe', 'cp']))
-                $inscription->where($key, 'like', $input.'%');
-            else
-                $inscription->where($key,$input);
-        }
+        $inscription->filter($request->validated());
 
         return view('admin.inscription.inscriptions', [
-            'inscriptionlist' => $inscription->paginate(),
+            'inscriptionlist' => $inscription->paginateFilter(),
             'userlist' => $this->repository['user']->getExperts(),
             'status' => $this->repository['inscription']::getStatus(),
             'request' => $request,

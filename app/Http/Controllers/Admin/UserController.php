@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Repositories\UserRepository;
-use App\Http\Requests\Filters\UserRequest as Filters;
+use App\Http\Requests\Filters\UserRequest as UserRequestFilters;
 
 class UserController extends Controller
 {
@@ -30,14 +30,14 @@ class UserController extends Controller
     }
 
     /**
-     * @param Filters $request
+     * @param UserRequestFilters $request
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Filters $request)
+    public function index(UserRequestFilters $request)
     {
         return view('admin.users', [
-            'userlist' => User::orderBy('name')->paginate(),
+            'userlist' => User::orderBy('name')->filter($request->validated())->paginateFilter(),
             'request' => $request,
         ]);
     }

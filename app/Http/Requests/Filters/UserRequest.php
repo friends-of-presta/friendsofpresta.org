@@ -23,6 +23,11 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
-        return [];
+        return [
+            'name' => ['max:255'],
+            'company' => ['max:255'],
+            'department' => ['max:2'],
+            'city' => ['max:255']
+        ];
     }
 }

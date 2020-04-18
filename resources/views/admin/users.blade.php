@@ -14,6 +14,25 @@
         <h1 class="mb-2">Utilisateurs</h1>
 
         <div class="sticky-top bg-light pt-1 px-1 rounded-bottom shadow-sm">
+            <form method="get" action="{{ route('admin.users') }}">
+                <div class="form-row">
+                    <div class="col-md-3">
+                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" value="{{ $request->get('name') }}" placeholder="Identité" />
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" name="company" class="form-control @error('company') is-invalid @enderror" value="{{ $request->get('company') }}" placeholder="Société" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" name="department" class="form-control @error('department') is-invalid @enderror" value="{{ $request->get('department') }}" placeholder="Département" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" name="city" class="form-control @error('city') is-invalid @enderror" value="{{ $request->get('city') }}" placeholder="Ville" />
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="w-100 btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
             <div class="d-flex flex-row justify-content-center mt-1">
                 <div class="mx-auto">{{ $userlist->appends($request->validated())->links() }}</div>
             </div>

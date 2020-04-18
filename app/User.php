@@ -2,6 +2,7 @@
 
 namespace App;
 
+use EloquentFilter\Filterable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -9,7 +10,7 @@ use App\Traits\Role;
 
 class User extends Authenticatable
 {
-    use Notifiable, Role;
+    use Notifiable, Role, Filterable;
 
     /**
      * The attributes that are mass assignable.
