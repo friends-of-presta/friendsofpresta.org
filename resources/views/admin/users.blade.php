@@ -32,19 +32,22 @@
                         <button type="submit" class="w-100 btn btn-primary"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
+
+                <input type="hidden" name="sort" value="{{ $request->get('sort') }}" />
+                <input type="hidden" name="direction" value="{{ $request->get('direction') }}" />
             </form>
             <div class="d-flex flex-row justify-content-center mt-1">
-                <div class="mx-auto">{{ $userlist->appends($request->validated())->links() }}</div>
+                <div class="mx-auto">{{ $userlist->appends($request->all())->links() }}</div>
             </div>
         </div>
 
         <table class="table table-striped">
             <thead>
             <tr>
-                <th scope="col">Nom</th>
-                <th scope="col">Société</th>
-                <th scope="col">Ville</th>
-                <th scope="col">Département</th>
+                <th scope="col">@sortablelink('name', 'Nom')</th>
+                <th scope="col">@sortablelink('company', 'Société')</th>
+                <th scope="col">@sortablelink('city', 'Ville')</th>
+                <th scope="col">@sortablelink('department', 'Département')</th>
                 <th scope="col">Actions</th>
             </tr>
             </thead>

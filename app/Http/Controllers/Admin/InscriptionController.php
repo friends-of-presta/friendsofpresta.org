@@ -41,11 +41,8 @@ class InscriptionController extends Controller
      */
     public function index(InscriptionRequestFilters $request)
     {
-        $inscription = Inscription::orderBy('id', 'desc');
-        $inscription->filter($request->validated());
-
         return view('admin.inscription.inscriptions', [
-            'inscriptionlist' => $inscription->paginateFilter(),
+            'inscriptionlist' => Inscription::sortable(['id' => 'desc'])->filter($request->validated())->paginateFilter(),
             'userlist' => $this->repository['user']->getExperts(),
             'status' => $this->repository['inscription']::getStatus(),
             'request' => $request,

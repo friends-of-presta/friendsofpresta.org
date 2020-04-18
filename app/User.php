@@ -3,14 +3,19 @@
 namespace App;
 
 use EloquentFilter\Filterable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Traits\Role;
+use Kyslik\ColumnSortable\Sortable;
 
 class User extends Authenticatable
 {
-    use Notifiable, Role, Filterable;
+    use Notifiable, Role, Filterable, Sortable;
+
+    /**
+     * @var array
+     */
+    public $sortable = ['name', 'city', 'company', 'department'];
 
     /**
      * The attributes that are mass assignable.

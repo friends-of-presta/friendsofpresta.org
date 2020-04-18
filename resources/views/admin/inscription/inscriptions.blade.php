@@ -45,22 +45,25 @@
                         <button type="submit" class="w-100 btn btn-primary"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
+
+                <input type="hidden" name="sort" value="{{ $request->get('sort') }}" />
+                <input type="hidden" name="direction" value="{{ $request->get('direction') }}" />
             </form>
             <div class="d-flex flex-row justify-content-center mt-1">
-                <div class="mx-auto">{{ $inscriptionlist->appends($request->validated())->links() }}</div>
+                <div class="mx-auto">{{ $inscriptionlist->appends($request->all())->links() }}</div>
             </div>
         </div>
 
         <table class="table table-striped">
             <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Société</th>
-                <th scope="col">CP</th>
-                <th scope="col">Ville</th>
-                <th scope="col">Expert</th>
-                <th scope="col">Agence</th>
-                <th scope="col">Ville</th>
+                <th scope="col" class="text-nowrap">@sortablelink('id', '#')</th>
+                <th scope="col">@sortablelink('societe', 'Société')</th>
+                <th scope="col">@sortablelink('cp', 'CP')</th>
+                <th scope="col">@sortablelink('ville', 'Ville')</th>
+                <th scope="col">@sortablelink('user.name', 'Expert')</th>
+                <th scope="col">@sortablelink('user.company', 'Agence')</th>
+                <th scope="col">@sortablelink('user.city', 'Ville')</th>
                 <th scope="col">Actions</th>
             </tr>
             </thead>

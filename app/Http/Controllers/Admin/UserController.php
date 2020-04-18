@@ -37,7 +37,7 @@ class UserController extends Controller
     public function index(UserRequestFilters $request)
     {
         return view('admin.users', [
-            'userlist' => User::orderBy('name')->filter($request->validated())->paginateFilter(),
+            'userlist' => User::sortable(['name' => 'asc'])->filter($request->validated())->paginateFilter(),
             'request' => $request,
         ]);
     }

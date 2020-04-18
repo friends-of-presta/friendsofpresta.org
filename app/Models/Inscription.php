@@ -2,12 +2,19 @@
 
 namespace App\Models;
 
+use Kyslik\ColumnSortable\Sortable;
 use Illuminate\Database\Eloquent\Model;
 use EloquentFilter\Filterable;
+use Illuminate\Database\Eloquent\Builder;
 
 class Inscription extends Model
 {
-    use Filterable;
+    use Filterable, Sortable;
+
+    /**
+     * @var array
+     */
+    public $sortable = ['id', 'societe', 'cp', 'ville'];
 
     /**
      * The table associated with the model.
