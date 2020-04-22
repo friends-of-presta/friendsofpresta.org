@@ -4,9 +4,9 @@
 
 @section('content')
     <p><span>Bonjour,</span></p>
-    <p><span>Vous venez de vous inscrire sur <a href="{{ route('pages.ecommercesolidaire.index') }}">e-commerce solidaire par Friends-of-Presta</a>, nous vous en remercions. L&rsquo;expert b&eacute;n&eacute;vole qui va s&rsquo;occuper de vous est :</span>
+    <p><span>Vous venez de vous inscrire sur <a href="{{ route('pages.ecommercesolidaire.index') }}">e-commerce solidaire par Friends-of-Presta</a>, nous vous en remercions. L&rsquo;expert b&eacute;n&eacute;vole qui va s&rsquo;occuper de vous va prendre contact avec vous rapidement.</span>
     </p>
-    <p>&nbsp;</p>
+  
     <p><span>La communaut&eacute; Friends-of-Presta constitu&eacute;e d&rsquo;experts PrestaShop se mobilise pour vous offrir un </span><strong>site
             de vente en ligne</strong><span>, </span><strong>gratuitement </strong><span
         >pour que vous puissiez </span><strong>continuer
