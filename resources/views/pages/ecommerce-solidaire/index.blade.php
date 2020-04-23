@@ -327,7 +327,7 @@
                     <strong>Vous êtes propriétaire de votre site</strong> et pouvez l'utiliser autant que que vous le voulez.
                     L’hébergement sera accessible pendant toute la durée du confinement. L’objectif est d’aider les
                     TPE à passer ce cap du confinement mais n’est pas de fournir une concurrence déloyale aux
-                    prestataires. L’hébergement sera arrêté deux mois après l’arrêt du confinement : vous pourrez
+                    prestataires. L’hébergement sera arrêté le 31 Aout 2020 (soit environ deux mois après le déconfinement complet) vous pourrez
                     récupérer l’ensemble du site pour l’héberger où vous le souhaitez, il reste à vous.
                 </p>
             </div>
