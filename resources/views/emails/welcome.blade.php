@@ -102,7 +102,9 @@
     <p>&nbsp;</p>
     <p><span>La communaut&eacute; Friends-of-Presta vous souhaite courage et t&eacute;nacit&eacute; pendant ces moments particuliers. Prenez soin de vous et favorisez les bonnes pratiques notamment autour des livraisons produits pour faire barri&egrave;re &agrave; l&rsquo;&eacute;pid&eacute;mie.</span>
     </p>
-    <p>&nbsp;</p>
+    <p><span>Nous vous invitons &agrave; rejoindre la communaut&eacute; Friends of Presta sur <a href="https://www.facebook.com/ecommercesolidaire/"> notre page Facebook </a> </span> <span> Vous y trouverez des vid&eacute;os, des conseils et un espace de discussion.</span>   
+    </p>
+    <p>&nbsp;</p> 
     <p><span>Avec toute notre solidarit&eacute;,&nbsp;</span>
     </p>
     <p><span>Les b&eacute;n&eacute;voles Friends-of-Presta</span>
