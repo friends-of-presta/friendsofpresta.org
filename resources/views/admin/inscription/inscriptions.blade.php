@@ -58,6 +58,7 @@
             <thead>
             <tr>
                 <th scope="col" class="text-nowrap">@sortablelink('id', '#')</th>
+                <th scope="col">@sortablelink('created_at', 'Date')</th>
                 <th scope="col">@sortablelink('societe', 'Société')</th>
                 <th scope="col">@sortablelink('cp', 'CP')</th>
                 <th scope="col">@sortablelink('ville', 'Ville')</th>
@@ -71,6 +72,7 @@
             @foreach ($inscriptionlist as $inscription)
                 <tr>
                     <th scope="row" id="l{{ $inscription->id }}">{{ $inscription->id }}</th>
+                    <td><span @if($inscription->created_at) data-toggle="tooltip" data-placement="top" title="{{ ucfirst($inscription->created_at->locale('fr_FR')->isoFormat('LLLL')) }}" @endif>{{ $inscription->created_at ? $inscription->created_at->diffForHumans() : '' }}</span></td>
                     @if($inscription->url)
                     <td class="text-uppercase"><a target="_blank" href="{{ $inscription->url }}">{{ $inscription->societe }}</a></td>
                     @else

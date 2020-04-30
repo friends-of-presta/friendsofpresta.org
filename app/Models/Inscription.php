@@ -14,7 +14,7 @@ class Inscription extends Model
     /**
      * @var array
      */
-    public $sortable = ['id', 'societe', 'cp', 'ville'];
+    public $sortable = ['id', 'societe', 'cp', 'ville', 'created_at'];
 
     /**
      * The table associated with the model.
