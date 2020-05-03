@@ -140,6 +140,9 @@
                     de produit ou service. Consultez le site PrestaShop.com pour obtenir plus d'information. Créer
                     votre boutique avec la solution PrestaShop est très rapide et vous permet de vendre vos articles
                     en toute fiabilité.
+                    <div class="text-center">
+                        <a href="{{ route('pages.ecommercesolidaire.inscriptions') }}" class="btn btn-secondary text-white mt-2">Voir toutes les boutiques en ligne</a>
+                    </div>
                 </p>
             </div>
             <div class="col-lg-6">
@@ -257,7 +260,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="{{ route('pages.ecommercesolidaire.inscriptions') }}" class="btn btn-light mt-2">Voir toutes les boutiques en ligne</a>
+            <a href="{{ route('pages.ecommercesolidaire.inscriptions') }}" class="btn btn-secondary text-white mt-2">Voir toutes les boutiques en ligne</a>
         </div>
     </section>
 
