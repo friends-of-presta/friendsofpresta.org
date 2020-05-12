@@ -418,7 +418,7 @@
             <h3 class="text-secondary h-underline-secondary mb-2">
                 Je m'inscris <span class="text-dark">gratuitement</span>
             </h3>
-            <p>Date limite d'inscription : 15 Mai 2020</p>
+            
             <div class="px-lg-4 px-sm-2">
                 <div class="row">
                     <div class="col-12">
