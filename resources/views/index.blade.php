@@ -8,7 +8,7 @@
         <h2>Qui sommes-nous ?</h2>
         <p>Nous sommes des intégrateurs et dévelopeurs Prestashop, travaillant ensemble sur des actions, modules open source et autres ressources.</p>
         <p>Est-ce que cette organisation est ouvertes aux débutants et e-commerçants ?</p>
-        <p>Il est préférable de vous référer au <a href="https://www.prestashop.com/forums">forum Officiel Prestashop</a> si vous êtes marchand ou à la documentation Prestashop si vous débutez.</p>
+        <p>Il est préférable de vous référer au <a href="https://www.prestashop.com/forums/">forum Officiel Prestashop</a> si vous êtes marchand ou à la documentation Prestashop si vous débutez.</p>
         <h2>Que faisons-nous ?</h2>
         <p>
             Nous voulons un espace d'entraide pour partager des ressources et astuces.
@@ -30,7 +30,7 @@
         <h2>People</h2>
         <p>We are PrestaShop integrators and developers, working together actions, modules and additional resources.</p>
         <p>Are this organization and its differents channels open for merchants and complete beginners?</p>
-        <p>No, please refers to the <a href="https://www.prestashop.com/forums">official forum of PrestaShop</a> if you're a
+        <p>No, please refers to the <a href="https://www.prestashop.com/forums/">official forum of PrestaShop</a> if you're a
             merchant or to the official User or Developers documentations if you
             need to learn PrestaShop basics.</p>
         <h2>What we do</h2>
