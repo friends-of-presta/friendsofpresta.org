@@ -1,7 +1,7 @@
 @extends('pages/ecommerce-solidaire/layout')
 
 @push('head')
-    <meta name="description" content="Plate-forme de crise proposant la création de sites e-commerce gratuits pour les petites entreprises.">
+    <meta name="description" content="Plate-forme de crise proposant la création de sites e-commerce pour les petites entreprises.">
     <meta property="og:title" content="e-Commerce Solidaire par Friends-of-Presta"/>
     <meta property="og:image" content="{{ asset('assets/images/pages/ecommerce-solidaire/header.jpg') }}"/>
     <meta property="og:type" content="website"/>
@@ -36,13 +36,13 @@
                             <strong>Toute entreprise impactée par le confinement</strong> : nous aidons déjà des boulangeries, éleveurs, chocolatiers, food trucks, épiceries fines, un affineur …
                         </li>
                         <li class="pt-2">
-                            L'entreprise est en <strong>société de moins de 20 salariés</strong> et n'a pas encore de site de vente en ligne.
+                            L'entreprise est en <strong>société de moins de 20 salariés</strong> et n'a pas encore de site de vente en ligne et n'est pas présent sur une plate-forme de commande en ligne.
                         </li>
                     </ul>
                 </div>
 
                 <div class="text-center mt-3">
-                    <a href="#form-container" class="btn btn-secondary text-white">Je m'inscris gratuitement</a>
+                    <a href="#form-container" class="btn btn-secondary text-white">Je m'inscris</a>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <strong>Un expert e-commerce vous accompagne</strong> pour la mise en place : logo, présentation de l'activité & catalogue produit. C'est ensuite à vous de jouer ! Vous gérez librement vos commandes et vos produits : prix, descriptifs, photos, ...
                 </p>
                 <p>
-                    Vous proposez vos produits en <strong>livraison ou en retrait sans contacts physiques pour
+                    Vous proposez vos produits en <strong>livraison ou en click & collect sans contact physique pour
                         limiter la propagation du virus</strong>. Vous sécurisez davantage la santé des personnes autour
                     de vous, la vôtre et celle de vos salariés.
                     Vous pouvez consultez les recommandations gouvernementales :
@@ -96,7 +96,7 @@
             </div>
             <div class="mt-2 col-md-3 col-6 d-flex align-items-center px-1 flex-fill flex-column">
                 <img src="{{ asset('assets/images/pages/ecommerce-solidaire/icon-livraison.svg') }}" height="60" alt=""/>
-                <span class="mt-1 text-center">Livraison et retrait <span class="d-block text-secondary font-weight-bold text-capitalize">sans contact physique</span></span>
+                <span class="mt-1 text-center">Livraison et click & collect <span class="d-block text-secondary font-weight-bold text-capitalize">sans contact physique</span></span>
             </div>
             <div class="mt-2 col-md-3 col-6 d-flex align-items-center px-1 flex-fill flex-column">
                 <img src="{{ asset('assets/images/pages/ecommerce-solidaire/icon-caddie.svg') }}" height="60" alt=""/>
@@ -122,18 +122,19 @@
             <div class="col-lg-6 mb-2">
                 <p>
                     Nous proposons un site aux <strong>fonctionnalités essentielles que vous pourrez conserver
-                        dans la durée :</strong>
+                        dans la durée pour un montant préférentiel de 300€ (valeur marchande d'environ 1000€) :</strong>
                 </p>
                 <ul class="list-unstyled">
                     <li>La plate-forme de vente en ligne PrestaShop</li>
                     <li>Une <strong>adresse</strong> du type monentreprise.ecommerce-solidaire.fr</li>
-                    <li>Un <strong>hébergement</strong> web (cela sert à mettre à disposition le site web sur un serveur pour qu'il soit consultable)
-                    </li>
                     <li>Un <strong>design fonctionnel</strong></li>
-                    <li>Un mode de <strong>paiement en ligne</strong></li>
-                    <li>Un mode de <strong>livraison et retrait sur place</strong></li>
-                    <li><strong>L'accompagnement</strong> initial par l’un de nos bénévoles</li>
+                    <li><strong>L'accompagnement</strong> initial par l’un de nos experts</li>
                 </ul>
+
+                A prévoir en supplément avec votre expert : 
+                <ul class="list-unstyled">
+                    <li>Un <strong>hébergement</strong> web (cela sert à mettre à disposition le site web sur un serveur pour qu'il soit consultable)</li>
+                    <li>Un mode de <strong>paiement en ligne pour recevoir les paiements par carte bleu</strong></li>
                 <p>
                     <strong>PrestaShop</strong> est la plate-forme open-source de commerce en ligne <strong>leader
                         en Europe</strong> avec plus de 300 000 marchands dans le monde. PrestaShop s'adapte à tout type
@@ -182,7 +183,7 @@
                     Comment lancer mon e-commerce <span class="text-dark">facilement ?</span>*
                 </h3>
                 <p>
-                    Accédez gratuitement aux avantages d'un <strong>e-commerce de proximité</strong> en 24h à 48h dès réception de l'ensemble des pièces demandées.
+                    Accédez aux avantages d'un <strong>e-commerce de proximité</strong> en 24h à 48h dès réception de l'ensemble des pièces demandées.
                 </p>
                 <p>
                     La création de votre site web est <strong>simple et rapide</strong>.<br>C'est une
@@ -216,7 +217,7 @@
         <div class="text-center">
             <h3 class="text-uppercase text-secondary font-weight-bold">Les sites solidaires déjà en ligne</h3>
             <div class="text-dark h5">Ils l'ont fait, pourquoi pas vous ?</div>
-            <a href="#form-container" class="btn btn-secondary text-white mt-2">Je m'inscris gratuitement</a>
+            <a href="#form-container" class="btn btn-secondary text-white mt-2">Je m'inscris</a>
         </div>
 
         <div class="row">
@@ -416,7 +417,7 @@
     <section id="form-container" class="position-relative mt-5 py-4">
         <div class="container-lg">
             <h3 class="text-secondary h-underline-secondary mb-2">
-                Je m'inscris <span class="text-dark">gratuitement</span>
+                Je m'inscris
             </h3>
             
             <div class="px-lg-4 px-sm-2">
@@ -519,7 +520,7 @@
                             </div>
                             <div class="text-center">
                                 <button id="submit" type="submit" class="btn btn-secondary text-white mt-3">
-                                    Je m'inscris gratuitement
+                                    Je m'inscris
                                 </button>
                             </div>
                         </form>
