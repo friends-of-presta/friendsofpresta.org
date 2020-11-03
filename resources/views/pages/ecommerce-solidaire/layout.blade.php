@@ -45,7 +45,7 @@
                         <h1 class="h1 text-secondary font-weight-bold ml-n2 mb-0">e-Commerce Solidaire</h1>
                         <img class="ml-lg-1 ml-n2 ml-sm-1 my-1" src="{{ asset('assets/images/pages/ecommerce-solidaire/logo/fop.svg') }}" height="30" alt="Friends-of-Presta" />
                         <p class="mb-auto font-italic">
-                            La communauté Friends of Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne de proximité, gratuitement.
+                            La communauté Friends of Presta se mobilise dans le cadre du mouvement #EcommerceSolidaire pour offrir aux entreprises impactées par le confinement lié au COVID-19 un site de vente en ligne à prix solidaire.
                         </p>
                     </div>
                 </div>
