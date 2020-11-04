@@ -16,15 +16,18 @@
             <div class="col-lg-6">
                 <div class="">
                     <h3 class="text-secondary h-underline-secondary">
-                        Les objectifs de <span class="text-dark">l'initiative</span>
+                        Les objectifs d'E-commerce <span class="text-dark">Solidaire</span>
                     </h3>
                     <ul class="list-unstyled list-hyphens">
                         <li class="pt-2">
-                            Aider les TPE qui, partout en France, <strong>doivent se réorganiser pour vendre sans contact</strong> et lutter contre la propagation du virus.
+                            <strong>Favoriser la continuité d'activité des petites entreprises dans la durée</strong> pour passer les périodes de confinement et s'adapter aux changements.
                         </li>
                         <li class="pt-2">
-                            <strong>Favoriser la continuité de l'activité des petites entreprises</strong>
-                            et préparer la reprise.
+                            <strong>favoriser le développement d'un e-commerce de proximité pour les TPE</strong><br/>
+                            Avoir une boutique en ligne c'est acquérir un outil qui complète son activité traditionnelle de vente en magasin. Cela correspond aux nouveaux usages de vos clients et facilite les transactions sans contact.
+                        </li>
+                        <li class="pt-2">
+                            <strong> maximiser la sécurité autour des livraisons et retraits en click and collect</strong> en respectant les règles d'hygiène pour <strong>faire barrière au virus.</strong>
                         </li>
                     </ul>
                 </div>
@@ -33,10 +36,10 @@
                     <h3 class="text-secondary h-underline-secondary">Pour qui ?</h3>
                     <ul class="list-unstyled list-hyphens">
                         <li class="pt-2">
-                            <strong>Toute entreprise impactée par le confinement</strong> : nous aidons déjà des boulangeries, éleveurs, chocolatiers, food trucks, épiceries fines, un affineur …
+                            <strong>Commerçants, artisans, producteurs</strong> et groupements de producteurs, primeurs, cavistes, magasins de bricolage, commerces d'aliments pour animaux …
                         </li>
                         <li class="pt-2">
-                            L'entreprise est en <strong>société de moins de 20 salariés</strong> et n'a pas encore de site de vente en ligne et n'est pas présent sur une plate-forme de commande en ligne.
+                        Toute <strong> ou entreprise</strong> de moins de 20 salariés <strong>nécessitant de poursuivre son activité</strong> et qui n'a pas encore de site de vente en ligne et n'est pas encore non plus présente sur une plate-forme de commande en ligne (deliveroo, ...).
                         </li>
                     </ul>
                 </div>
@@ -56,20 +59,20 @@
             </div>
             <div class="col-lg-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">
-                    E-commerce Solidaire : Comment ouvrir ma boutique en ligne ?
+                    E-commerce Solidaire : Comment créer une boutique en ligne ?
                 </h3>
                 <p>
                     <strong>Commerçants, producteurs et gérants de petites entreprises,</strong>
-                    vous qui faîtes face au challenge de repenser votre organisation suite au confinement, nous vous
-                    livrons un <strong>site e-commerce fonctionnel en 24 à 48h*</strong>.</p>
+                    vous qui faîtes face au challenge de repenser votre organisation suite à cette période mouvementée et à ce second confinement, nous vous livrons un <strong>site e-commerce fonctionnel en 24 à 48h*</strong>.</p>
 
                 <p>
-                    <strong>Un expert e-commerce vous accompagne</strong> pour la mise en place : logo, présentation de l'activité & catalogue produit. C'est ensuite à vous de jouer ! Vous gérez librement vos commandes et vos produits : prix, descriptifs, photos, ...
+                    <strong>Un expert e-commerce vous accompagne</strong> pour la mise en place : logo, présentation de l'activité & catalogue produit. C'est ensuite à vous de jouer ! Vous gérez librement vos commandes et vos produits : prix, descriptifs, photos, ...<br/>
+                    Vous pouvez ainsi <strong> à servir votre clientèle ou trouver de nouveaux clients proches de vous</strong>.
+
                 </p>
                 <p>
-                    Vous proposez vos produits en <strong>livraison ou en click & collect sans contact physique pour
-                        limiter la propagation du virus</strong>. Vous sécurisez davantage la santé des personnes autour
-                    de vous, la vôtre et celle de vos salariés.
+                    Vous proposez vos produits en <strong>livraison ou en click & collect</strong>. Vous sécurisez davantage la santé des personnes autour de vous, la vôtre et celle de vos salariés.
+
                     Vous pouvez consultez les recommandations gouvernementales :
                 </p>
                 <ul>
@@ -80,6 +83,16 @@
                         <a href="https://www.economie.gouv.fr/files/files/Guide_precautions_sanitaires_livraison_colis.pdf">Le guide des précautions sanitaires</a>
                     </li>
                 </ul>
+                    <p>
+                    Commerçants, créateurs, artisans qui ont fermé l’accueil au public peuvent ainsi continuer à servir leur clientèle et proposer leurs produits en livraison ou en retrait.
+                    </p>
+                    <p>
+    Pour vous accompagner au mieux, avoir un site ne suffit pas, il faut aussi que vous soyez visible pour vos clients. C'est pourquoi nous complétons notre offre par davantage de visibilité avec une prestation réseaux sociaux et google my business.
+
+<                   </p>
+                    <p>
+                    * (délai variable en fonction du nombre de demandes)
+                    </p>
                 </p>
             </div>
         </div>
@@ -87,7 +100,7 @@
 
     <section class="container-lg mt-5 py-md-5">
         <h3 class="text-uppercase font-weight-bold h4 text-center">
-            Les avantages d'un e-commerce de proximité <span class="text-secondary">100% sans contact</span>
+            Les avantages d'un e-commerce de proximité <span class="text-secondary">à tarif solidaire</span>
         </h3>
         <div class="row">
             <div class="mt-2 col-md-3 col-6 d-flex align-items-center px-1 flex-fill flex-column">
@@ -113,8 +126,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">
-                    Une boutique en ligne simple et efficace pour soutenir les <span class="text-dark">commerces de
-                        proximité</span>
+                Un site efficace pour soutenir les <span class="text-dark">commerces de proximité dans la durée</span>
                 </h3>
             </div>
         </div>
@@ -122,25 +134,33 @@
             <div class="col-lg-6 mb-2">
                 <p>
                     Nous proposons un site aux <strong>fonctionnalités essentielles que vous pourrez conserver
-                        dans la durée pour un montant préférentiel de 300€ (valeur marchande d'environ 1000€) :</strong>
+                        dans la durée  pour un prix solidaire de 300€ HT (valeur marchande d'environ 1000€) :</strong>
                 </p>
-                <ul class="list-unstyled">
+                <ul class="">
                     <li>La plate-forme de vente en ligne PrestaShop</li>
                     <li>Une <strong>adresse</strong> du type monentreprise.ecommerce-solidaire.fr</li>
                     <li>Un <strong>design fonctionnel</strong></li>
                     <li><strong>L'accompagnement</strong> initial par l’un de nos experts</li>
                 </ul>
 
-                A prévoir en supplément avec votre expert : 
-                <ul class="list-unstyled">
-                    <li>Un <strong>hébergement</strong> web (cela sert à mettre à disposition le site web sur un serveur pour qu'il soit consultable)</li>
-                    <li>Un mode de <strong>paiement en ligne pour recevoir les paiements par carte bleu</strong></li>
+                A prévoir en supplément : 
+                <ul class="">
+                    <li>Un <strong>hébergement web</strong> (cela sert à mettre à disposition le site web sur un serveur pour qu'il soit consultable)</li>
+                    <li>Un un nom de domaine dédié (facultatif)</li>
+                    <li>Un mode de <strong>paiement en ligne pour recevoir les paiements par carte bleu</strong> (facultatif)</li>
+                    <li><strong>L’adhésion à l'association Friends of Presta</strong> pour 50€  La communauté Friends of Presta est l’association qui regroupe des développeurs et intégrateurs autour de la solution e-commerce française PrestaShop. </li>
+                </ul>
                 <p>
                     <strong>PrestaShop</strong> est la plate-forme open-source de commerce en ligne <strong>leader
                         en Europe</strong> avec plus de 300 000 marchands dans le monde. PrestaShop s'adapte à tout type
-                    de produit ou service. Consultez le site PrestaShop.com pour obtenir plus d'information. Créer
+                    de produit ou service. Consultez le site <a href="https://www.prestashop.com/" target="_blank">PrestaShop.com</a> pour obtenir plus d'information. Créer
                     votre boutique avec la solution PrestaShop est très rapide et vous permet de vendre vos articles
                     en toute fiabilité.
+
+                </p>
+                <p>
+                <strong>Une prestation pour augmenter la visibilité de votre boutique en ligne</strong> Comment augmenter la visibilité de votre site et trouver de nouveaux clients ? Nous vous accompagnons pour prendre en main votre présence sur les réseaux sociaux et en créant avec vous une fiche google my business.
+
                     <div class="text-center">
                         <a href="{{ route('pages.ecommercesolidaire.inscriptions') }}" class="btn btn-secondary text-white mt-2">Voir toutes les boutiques en ligne</a>
                     </div>
@@ -157,7 +177,7 @@
     <section class="container-lg mt-5">
         <div class="row flex-md-row flex-column-reverse align-items-center">
             <div class="col-md-6 mt-md-0 mt-2">
-                <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.jpg') }}" alt=""/></a>
+                <a href="https://lestareesduvrac.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/screen-les-tarees-du-vrac.jpg') }}" alt=""/></a>
             </div>
             <div class="col-md-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">Un exemple ? <span class="text-dark">Les Tarées du Vrac à Toulouse</span></h3>
@@ -170,7 +190,7 @@
                 </p>
 
                 <div class="text-center mt-3">
-                    <a href="https://lestareesduvrac.ecommerce-solidaire.fr/" target="_blank" class="btn btn-secondary text-white">Voir le site exemple</a>
+                    <a href="https://lestareesduvrac.fr/" target="_blank" class="btn btn-secondary text-white">Voir le site exemple</a>
                 </div>
             </div>
         </div>
@@ -180,10 +200,10 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h3 class="text-secondary h-underline-secondary mb-2">
-                    Comment lancer mon e-commerce <span class="text-dark">facilement ?</span>*
+                    Comment lancer mon e-commerce <span class="text-dark">facilement ?</span>
                 </h3>
                 <p>
-                    Accédez aux avantages d'un <strong>e-commerce de proximité</strong> en 24h à 48h dès réception de l'ensemble des pièces demandées.
+                    Accédez aux avantages d'un <strong>e-commerce de proximité</strong> en 24h à 48h* dès réception de l'ensemble des pièces demandées.
                 </p>
                 <p>
                     La création de votre site web est <strong>simple et rapide</strong>.<br>C'est une
@@ -208,7 +228,7 @@
 
             </div>
             <div class="col-lg-6 d-none d-lg-flex">
-                <a href="https://little-big-truck.ecommerce-solidaire.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-food.jpg') }}" alt=""/></a>
+                <a href="https://www.mylittlebigtruck.fr/" target="_blank"><img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-food.jpg') }}" alt=""/></a>
             </div>
         </div>
     </section>
@@ -342,16 +362,14 @@
                 </p>
             </div>
 
-            <h4 class="h5 mt-4">Pourquoi le hashtag #EcommerceSolidaire ?</h4>
+            <h4 class="h5 mt-4">Pourquoi passer du tout gratuit à une offre à prix solidaire ?</h4>
             <div class="ml-sm-5">
                 <p>
-                    <a href="https://twitter.com/WiziShop_fr/status/1239946881574240256?s=20" rel="nofollow">La
-                        société Wizishop</a> est à l’origine du mouvement citoyen Covid-19 #EcommerceSolidaire en
-                    proposant leur solution gratuitement suite à l’appel de Cédric O, Secrétaire d’Etat au
-                    Numérique. Merci à eux d’avoir lancé cette formidable dynamique et de <a href="https://ecommerce-solidaire.com/" target="_blank">référencer toutes les initiatives #EcommerceSolidaire ici</a>.
-                    Le Hashtag <a href="https://twitter.com/hashtag/ecommercesolidaire">#EcommerceSolidaire</a> a
-                    quant à lui été <a href="https://twitter.com/chanezzzzzz/status/804031091246039040">lancé par
-                        Emmaüs</a> il y a quelques années.
+                Certains sites ont très peu servi, voire pas du tout. Cela a mobilisé du temps et de l'énergie pour peu de résultat.
+                </p>
+                <p>
+                Nous avons besoin que l'aidé s'implique vraiment dans sa boutique en ligne. Nous le voyons comme un outil dans la durée et pas seulement pour un mois ou deux. Il nous apparaît donc cohérent de demander une participation pour couvrir une petite partie des frais engagés.
+
                 </p>
             </div>
         </div>
@@ -538,29 +556,21 @@
                     Notre action s'inscrit dans <strong>un contexte de crise</strong>
                     pour limiter les pertes de produits alimentaires, faciliter le commerce de tout produit
                     utile et <strong>limiter l'impact économique</strong> au plus près de chacun d'entre nous.
-                    L’objectif est bien de préparer le redémarrage qui aura lieu dans les prochaines semaines.
+                    L’objectif est de pouvoir traverser les difficultés avec un outil numérique pérène.
                 </p>
                 <a href="https://www.facebook.com/ecommercesolidaire" target="_blank" class="d-block text-center mt-2">
                 <img class="" src="{{ asset('assets/images/pages/ecommerce-solidaire/icons/fbpage.jpg') }}" alt="Rejoignez-nous sur facebook"/>
                 </a>
             </div>
             <div class="col-md-6 col-12">
-                <h3 class="h-underline-secondary mb-2">Quelques conseils</h3>
-                <p>Il reste primordial de respecter les <strong>recommandations gouvernementales</strong> :</p>
-                <ul>
-                    <li>se déplacer pour des <strong>achats strictement nécessaires</strong> dans les points de
-                        vente ou de retrait de proximité</li>
-                    <li>respecter tous les <strong>gestes barrières</strong> pour protéger les personnes autour
-                        de vous ainsi que vous-même et particulièrement pendant le retrait de vos courses.</li>
-                    <li>appliquer un <strong>gel hydro-alcoolique</strong> ou se laver les mains régulièrement
-                    </li>
-                    <li>respecter la <strong>distance d'1 mètre</strong> avec les personnes alentour</li>
-                    <li> <strong>désinfection</strong> avec des lingettes les zones de contact (comme un caddy
-                        de supermarché)</li>
-                    <li>tousser dans son coude ou dans un masque pour éviter les projections de gouttelettes
-                    </li>
-                </ul>
-                <p>Chacun a son rôle à jouer. </p>
+                <h3 class="h-underline-secondary mb-2">Retour d'expérience</h3>
+                <p>Nous avons aidé l'entreprise les Tarées du vrac, épicerie vrac et zéro déchet de Toulouse.
+                    Voici en vidéo son retour d'expérience sur la création de ce site e-commerce et comment elle a pu sauver son activité avec beaucoup d'agilité, de volonté et notre coup de pouce. 
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ukwYi82E6Aw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </p>
             </div>
         </div>
     </section>
