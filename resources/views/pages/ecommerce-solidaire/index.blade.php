@@ -67,7 +67,7 @@
 
                 <p>
                     <strong>Un expert e-commerce vous accompagne</strong> pour la mise en place : logo, présentation de l'activité & catalogue produit. C'est ensuite à vous de jouer ! Vous gérez librement vos commandes et vos produits : prix, descriptifs, photos, ...<br/>
-                    Vous pouvez ainsi <strong> à servir votre clientèle ou trouver de nouveaux clients proches de vous</strong>.
+                    Vous pouvez ainsi <strong> continuer à servir votre clientèle ou trouver de nouveaux clients proches de vous</strong>.
 
                 </p>
                 <p>
@@ -146,7 +146,7 @@
                 A prévoir en supplément : 
                 <ul class="">
                     <li>Un <strong>hébergement web</strong> (cela sert à mettre à disposition le site web sur un serveur pour qu'il soit consultable)</li>
-                    <li>Un un nom de domaine dédié (facultatif)</li>
+                    <li>Un nom de domaine dédié (facultatif)</li>
                     <li>Un mode de <strong>paiement en ligne pour recevoir les paiements par carte bleu</strong> (facultatif)</li>
                     <li><strong>L’adhésion à l'association Friends of Presta</strong> pour 50€  La communauté Friends of Presta est l’association qui regroupe des développeurs et intégrateurs autour de la solution e-commerce française PrestaShop. </li>
                 </ul>
