@@ -14,8 +14,8 @@
         <h3 class="text-secondary h-underline-secondary mb-2">Mentions <span class="text-dark">légales</span></h3>
         <p>Ce site internet est la propriété de communauté Friends-of-Presta</p>
         <p>
-            Responsable de publication : Jean-François Viguier<br />
-            Raison sociale : Association Friends-of-Presta en cours de création<br />
+            Responsable de publication : Olivier LE CORRE<br />
+            Raison sociale : Association Friends-of-Presta - Association loi 1901 inscrite le 15 Mai 2020 sous le numéro W313033851<br />
             Siège social : 2 rue Antoine Becquerel, 31140 Launaguet<br />
         </p>
         <h4>RGPD</h4>
