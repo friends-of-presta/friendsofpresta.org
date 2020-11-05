@@ -247,35 +247,28 @@
                     <p class="font-italic">La boulangerie - pâtisserie a déjà mis une
                         soixantaine de produits en ligne et s'est vite réorganisée :
                         madame en boutique et monsieur en livraison.
-                        Merci à notre expert Xavier BERNARD
+                        Merci à notre expert Xavier Bernard
                         qui les a accompagnés.</p>
-                    <a href="https://tartines-et-gourmandises.ecommerce-solidaire.fr/" target="_blank">
+                    <a href="https://www.boulangerie-patisserie-vrignaud.com/" target="_blank">
                         <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-boulangerie.jpg') }}" alt="Boulangerie Vrignaud" />
                     </a>
                 </div>
             </div>
             <div class="col-md-4 col-12 mt-2">
                 <div class="d-flex flex-column">
-                    <h4 class="h5">L'épicerie japonaise Autour du yuzu à Mâcon</h4>
-                    <p class="font-italic">L'épicerie fine japonaise Autour du Yuzu de Mâcon
-                        propose 200 références en ligne.
-                        Merci à Christophe VIDAL, expert basé à Lyon qui a
-                        pu livrer le site dans des délais records.</p>
-                    <a href="https://blz68.ecommerce-solidaire.fr/" target="_blank">
-                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-blz68.jpg') }}" alt="Boutique Autour du yuzu" />
+                    <h4 class="h5">Drive alimentaire pour la Ville de Bayonne</h4>
+                    <p class="font-italic">La mairie de Bayonne fédère les producteurs autour d'une marketplace en Click & Collect monté par notre experte Sabine Mille.</p>
+                    <a href="https://producteurslocaux.bayonne.fr/" target="_blank">
+                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-bayonne.jpg') }}" alt="Boutique producteurs de Bayonne" />
                     </a>
                 </div>
             </div>
             <div class="col-md-4 col-12 mt-2">
                 <div class="d-flex flex-column">
-                    <h4 class="h5">Le chocolatier Jeff de Bruges à Thionville</h4>
-                    <p class="font-italic">Le magasin Jeff de Bruges à Thionville
-                        peut poursuivre ses ventes de lapins,
-                        cloches et œufs de Pâques.
-                        Merci à Julien Mutzenhardt qui a mis en place
-                        leur boutique en ligne.</p>
-                    <a href="https://jeff-de-bruges.ecommerce-solidaire.fr/" target="_blank">
-                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-jdb.jpg') }}" alt="Boutique Jeff de Bruges à Thionville" />
+                    <h4 class="h5">Magasin de jouets Mon petit Jean</h4>
+                    <p class="font-italic">Vente de jeux de sociétés, Maquettes, Trains Electriques à Grenoble par notre expert Christophe Vidal.</p>
+                    <a href="https://www.monpetitjean.com/" target="_blank">
+                        <img class="img-fluid" src="{{ asset('assets/images/pages/ecommerce-solidaire/boutique-jouets.jpg') }}" alt="Boutique Jeff de Bruges à Thionville" />
                     </a>
                 </div>
             </div>
