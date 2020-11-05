@@ -8,12 +8,12 @@
     </p>
   
     <p><span>La communaut&eacute; Friends-of-Presta constitu&eacute;e d&rsquo;experts PrestaShop se mobilise pour vous offrir un </span><strong>site
-            de vente en ligne</strong><span>, </span><strong>gratuitement </strong><span
+            de vente en ligne</strong><span>, </span><strong>à tarif solidaire </strong><span
         >pour que vous puissiez </span><strong>continuer
             votre activit&eacute;</strong><span
         > et </span><strong>servir vos
             clients</strong><span>.</span><span
-        ><br/></span><span>Il existe des solutions pour la livraison sans risque de propagation du virus : retrait sans contact, livraison par vos propres moyens sans contact, &hellip;</span>
+        ><br/></span><span>Nous vous accompagnons dans la mise en place de votre boutique en ligne.&hellip;</span>
     </p>
     <p>&nbsp;</p>
     <p><span>Voici un exemple de site : </span><a
@@ -22,9 +22,22 @@
     <p><span><br/></span><span>Apr&egrave;s v&eacute;rification des conditions, votre expert ecommerce volontaire de Friends-of-Presta va prendre en charge votre demande et vous accompagnera pour la mise en place de votre site.</span>
     </p>
     <p><strong>Vous serez enti&egrave;rement propri&eacute;taire de votre site
-            web</strong><span>. Vous pourrez ainsi choisir de conserver votre site dans la dur&eacute;e en prenant ensuite &agrave; votre charge un l&rsquo;h&eacute;bergement (mise &agrave; disposition du site sur les serveurs). Ce co&ucirc;t interviendra &agrave; compter de 2 mois apr&egrave;s la fin du confinement qui a &eacute;t&eacute; d&eacute;cid&eacute; par le d&eacute;cret </span><span
-        >n&deg; 2020-260 du 16 mars 2020.</span><span
+            web</strong><span>. Notre offre comprend : <span
         ><br/><br/></span></p>
+    <ul>
+        <li> votre plate-forme de vente en ligne sous la solution PrestaShop </li>
+        <li> une adresse du type monentreprise.ecommerce-solidaire.fr ou un nom de domaine dédié </li>
+        <li> un design fonctionnel </li>
+        <li> l'accompagnement initial par l’un de nos volontaires bénévoles </li>
+    </ul><br/>    
+       Nous vous proposons des prestations complémentaires pour augmenter votre visibilité à tarif solidaire :
+    <ul>
+        <li> la création d'une fiche google my business </li>
+        <li> l'accompagnement sur un ou plusieurs r&eacute;seaux sociaux </li>
+    </ul><br/>    
+        
+        Notre objectif est de faire de ce site internet un outil efficace et durable qui pourra vous accompagner notamment dans ces p&eacute;riodes d’incertitude mais aussi apr&egrave;s. 
+                
     <p><strong>Coordonn&eacute;es compl&egrave;tes</strong></p>
     <p><span>L’expert bénévole qui va s’occuper de vous vous contactera sous 24H à 48H.</span>
     </p>
