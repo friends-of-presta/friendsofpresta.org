@@ -16,6 +16,7 @@
         <p>
             Responsable de publication : Olivier LE CORRE<br />
             Raison sociale : Association Friends-of-Presta - Association loi 1901 inscrite le 15 Mai 2020 sous le numéro W313033851<br />
+            Siret : 88364451000071<br />
             Siège social : 2 rue Antoine Becquerel, 31140 Launaguet<br />
         </p>
         <h4>RGPD</h4>
