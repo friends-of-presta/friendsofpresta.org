@@ -89,7 +89,7 @@
                     <p>
     Pour vous accompagner au mieux, avoir un site ne suffit pas, il faut aussi que vous soyez visible pour vos clients. C'est pourquoi nous complétons notre offre par davantage de visibilité avec une prestation réseaux sociaux et google my business.
 
-<                   </p>
+                   </p>
                     <p>
                     * (délai variable en fonction du nombre de demandes)
                     </p>
@@ -143,11 +143,11 @@
                     <li><strong>L'accompagnement</strong> initial par l’un de nos experts</li>
                 </ul>
 
-                A prévoir en supplément : 
+                A prévoir en supplément :
                 <ul class="">
                     <li>Un <strong>hébergement web</strong> (cela sert à mettre à disposition le site web sur un serveur pour qu'il soit consultable)</li>
                     <li>Un nom de domaine dédié (facultatif)</li>
-                    <li>Un mode de <strong>paiement en ligne pour recevoir les paiements par carte bleu</strong> (facultatif)</li>
+                    <li>Un mode de <strong>paiement en ligne pour recevoir les paiements par carte bleue</strong> (facultatif)</li>
                     <li><strong>L’adhésion à l'association Friends of Presta</strong> pour 50€  La communauté Friends of Presta est l’association qui regroupe des développeurs et intégrateurs autour de la solution e-commerce française PrestaShop. </li>
                 </ul>
                 <p>
@@ -427,7 +427,7 @@
             <h3 class="text-secondary h-underline-secondary mb-2">
                 Je m'inscris
             </h3>
-            
+
             <div class="px-lg-4 px-sm-2">
                 <div class="row">
                     <div class="col-12">
@@ -558,7 +558,7 @@
             <div class="col-md-6 col-12">
                 <h3 class="h-underline-secondary mb-2">Retour d'expérience</h3>
                 <p>Nous avons aidé l'entreprise les Tarées du vrac, épicerie vrac et zéro déchet de Toulouse.
-                    Voici en vidéo son retour d'expérience sur la création de ce site e-commerce et comment elle a pu sauver son activité avec beaucoup d'agilité, de volonté et notre coup de pouce. 
+                    Voici en vidéo son retour d'expérience sur la création de ce site e-commerce et comment elle a pu sauver son activité avec beaucoup d'agilité, de volonté et notre coup de pouce.
 
                     <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ukwYi82E6Aw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
