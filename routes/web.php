@@ -24,6 +24,8 @@ Route::group(["prefix"=>"/ecommerce-solidaire"], function() {
     Route::post('/inscription.html', 'Pages\EcommercesolidaireController@inscription')->name('pages.ecommercesolidaire.mail');
 });
 
+Route::view('/community-modules', 'Pages\CommunityModulesController@index');
+
 Auth::routes();
 
 Route::group(["prefix"=>"/admin"], function() {
